@@ -1,0 +1,29 @@
+        *{
+	font-family: Arial, Helvetica, sans-serif;
+}
+        .heading{font-family: 'Open Sans', sans-serif; background-color: aquamarine; font-weight: bold; font-style: "Open sans" ; text-align: center; padding: 10px; font-size: xx-large;}
+        .selectf{margin-top:1cm; margin-left: auto; margin-right: auto;}
+        .option{ padding: 5px; padding-left: 1pc; margin: 5px; font-weight: bolder; font-size: 30px; font-family: 'Open Sans', sans-serif; background-image: linear-gradient(45deg, grey, lightgray); transition: ease 0.2s;}
+        .option:hover{ padding-left: 30px;}
+        .option:active{ background-image: linear-gradient(180deg, grey, lightgray); transition: ease 5s}
+        #Q{border: 1px black solid; background-color: lightcyan; font-weight: bold;}
+        #ans{font-weight: lighter;}.blocks {
+	width: 30%;
+	margin-top: 12px;
+	margin-right: 12px;
+	margin-left: 12px;
+	margin-bottom: 12px;
+	border: solid 2px lightgray;
+	padding: 3px;
+	border-radius: 10px;
+	display: inline-block;
+	background-color: lightgray;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	color: black;
+	font-weight: bold;
+	font-size: large;
+	height: 2cm;
+
+}
