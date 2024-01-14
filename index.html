@@ -25,10 +25,21 @@
     background-color: lightgray;
 	
 }
-
+body{background-image: url(/background.jpg); background-size: cover;}
+.optionbox{background: rgba( 255, 255, 255, 0.45 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 5px );
+-webkit-backdrop-filter: blur( 5px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+padding: 10px;
+margin-top:3cm;
+margin-left: auto;
+margin-right: auto;
+width: 15cm;
+justify-content: center;}
 </style>
 </head>
-
 <body>
 <div style="background-color: rgb(31,44,63);
     border-radius: 5px;
@@ -37,9 +48,10 @@
     display: flex;
     justify-content: center;
 	align-items: center;" id="header" class="header"><img height="50px" src="mastermates-high-resolution-logo-transparent.png"></div>	
+<div class="optionbox">
 	<a href="f1.html"><div class="option">Function 1</div></a>
 	<a href="f2.html"><div class="option">Function 2</div></a>
 	<a href="f3.html"><div class="option">Function 3</div></a>
-
+</div>
 </body>
 </html>
