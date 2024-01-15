@@ -12,50 +12,95 @@
      transform: translate(-50%,-50%);
      width: 600px;
      border: solid black 2px;  
-     border-radius: 10px;   
+     border-radius: 10px;
+     padding:10px;   
 }
 .Suggestion-Box h2 {
  font-size: 20px;
  margin-bottom: 15px; 
- margin: 15px;  
+ margin: 15px; 
+  
 
 }
 .Suggestion-Box input{
-    width: 100%;
+    width: 200px;
     height: 50px;
     padding: 0 20px;
-    margin-bottom: 15px;
+    margin: 15px;
     border-radius: 5px;
-    border: 1px #86b086;
+    border: solid 1px #86b086;
 }
 .Suggestion-Box input:focus{
     border: 1px solid #000;
     outline: 0;
+    margin: 15px;
 
 } 
 
 .Suggestion-Box textarea {
-    width: 100%;
+    width: 477px;
     height: 50px;
     padding: 0 20px;
-    margin-bottom: 15px;
+    margin: 15px;
     border-radius: 5px;
-    border: 1px #86b086;
+    border: solid 1px #86b086;
 }
 .Suggestion-Box textarea:focus {
     border: 1px solid #000;
     outline: 0;
+    margin: 15px;
 
 }
-.Suggestion-Box button {
+/*.Suggestion-Box button {
    border: 0;
    padding: 10 px 30px;
    background: #86b0b6;
    font-size: 18px;
    border-radius: 5px;
    color: #fff;
+   margin: 15px;
 }
 .Suggestion-Box button:hover{
  background-color: #71a;
 }
-
+*/
+.Suggestion-Box button {
+    position: absolute;
+    left:230px;
+    width: 6.5em;
+    height: 2.3em;
+    margin: auto;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 0.625em;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+   }
+   
+   .Suggestion-Box button:hover {
+    color: black;
+   }
+   
+   .Suggestion-Box button:after {
+    content: "";
+    background: white;
+    position: absolute;
+    z-index: -1;
+    left: -20%;
+    right: -20%;
+    top: 0;
+    bottom: 0;
+    transform: skewX(-45deg) scale(0, 1);
+    transition: all 0.5s;
+   }
+   
+   .Suggestion-Box button:hover:after {
+    transform: skewX(-45deg) scale(1, 1);
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+   }
