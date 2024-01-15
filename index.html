@@ -4,27 +4,49 @@
 <meta charset="utf-8">
 <title>Untitled Document</title>
 <style type="text/css">
-	a:active{text-decoration: none;color: black}	
-	a:hover{text-decoration: none; color: black}
-	a:link{text-decoration: none; color: black}	
-	a:visited{text-decoration: none; color: black}
-.option:hover{cursor: pointer; background-color: #B6B6B6;}
-.bar {
-	margin-top: 10px;
+    .option {
+        width: 50%;
+        margin:auto;
+       margin-top: 5px;
+       margin-bottom: 5px;
+ padding: 15px 25px;
+ border: unset;
+ border-radius: 15px;
+ color: #212121;
+ z-index: 1;
+ background: #e8e8e8;
+ position: relative;
+ font-weight: 1000;
+ font-size: 17px;
+ -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+ box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+ transition: all 250ms;
+ overflow: hidden;
 }
-.bar {
-	float: right;
+
+.option::before {
+ content: "";
+ position: absolute;
+ top: 0;
+ left: 0;
+ height: 100%;
+ width: 0;
+ border-radius: 15px;
+ background-color: #212121;
+ z-index: -1;
+ -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+ box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+ transition: all 250ms
 }
-.option {
-    width: 7cm;
-    font-size: 30px;
-    display: flex;
-    border: solid 3px darkgray;
-    margin: 4px auto 4px auto;
-    border-radius: 7px;
-    background-color: lightgray;
-	
+
+.option:hover {
+ color: #e8e8e8;
 }
+
+.option:hover::before {
+ width: 100%;
+}
+
 body{background-image: url(/background.jpg); background-size: cover;}
 .outerbox{height: 90vh; display: flex; justify-content: center; align-items: center}
 .optionbox{ 
@@ -35,6 +57,7 @@ backdrop-filter: blur( 5px );
 border-radius: 10px;
 border: 1px solid rgba( 255, 255, 255, 0.18 );
 width: 50%;
+;
 }
 </style>
 </head>
