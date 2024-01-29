@@ -16,41 +16,48 @@
             color: rgb(0, 255, 110);
         }
 
-        .heading {
-            font-family: 'Open Sans', sans-serif;
-            background-color: aquamarine;
-            font-weight: bold;
-            font-style: "Open sans";
-            text-align: center;
-            padding: 10px;
-            font-size: xx-large;
-        }
+        .inneroption:hover {
+        cursor: pointer;
+        background-color: #B6B6B6;
+        
+    }
 
-        .selectf {
-            margin-top: 1cm;
-            margin-left: auto;
-            margin-right: auto;
-        }
+    .logobox {
+        position: relative;
+    }
 
-        .option {
-            padding: 5px;
-            padding-left: 1pc;
-            margin: 5px;
-            font-weight: bolder;
-            font-size: 30px;
-            font-family: 'Open Sans', sans-serif;
-            background-image: linear-gradient(45deg, grey, lightgray);
-            transition: ease 0.2s;
-        }
+    .logo {
+        position: absolute;
+        left: 20%;
+        ;
+    }
 
-        .option:hover {
-            padding-left: 30px;
+    @media (max-width: 576px) {
+        .logo {
+            left: 30%;
         }
+    }
 
-        .option:active {
-            background-image: linear-gradient(180deg, grey, lightgray);
-            transition: ease 5s
-        }
+    .header {
+        height: 70px;
+        background-color: rgb(31, 44, 63);
+
+    }
+
+    picture {
+        height: 50px;
+    }
+
+    .home {
+        box-shadow: -1px 0 0 ivory;
+        height: 50px;
+        padding-top: 13px;
+    }
+
+    .home,
+    .search {
+        text-align: center;
+    }
 
         #Q {
             border: 1px black solid;
@@ -65,16 +72,15 @@
 </head>
 
 <body>
-    <div style="background-color: rgb(31,44,63);
-border-radius: 5px;
-text-align: center;
-height: 60px;
-display: flex;
-justify-content: center;
-align-items: center;" id="header" class="header"><img height=50px
-            src="../mastermates-high-resolution-logo-transparent.png">
+    <div class="header row align-items-center">
+        <picture class="col-6 col-md-8 logobox">
+            <source media="(min-width:576px)" srcset="../logoblueinline.png">
+            <img class="logo" height=50px src="../logo.png" alt="">
+        </picture>
+        <div class="col-3 col-md-2 home"><a href="../index.html" style="text-decoration: none; color: #B6B6B6;">Home</a></div>
+        <div class="col-3 col-md-2 search"><a href="#" style="text-decoration: none; color: #B6B6B6;">Search
+            </a></div>
     </div>
-
     <a href="../index.html">Home</a>
     <article class="all-browsers">
         <h2>IG SYSTEM</h2>
@@ -143,7 +149,7 @@ align-items: center;" id="header" class="header"><img height=50px
                 islotaion valve with a locing mechanism.</p>
                 <div class="footer row justify-content-center align-items-center p-2" style="text-decoration: none; color: ivory; background-color: rgb(31,44,63); text-align: center;">
                     <div class="col-sm-3 box3 order-sm-last">
-                        <img  height="50px" src="mastermates-high-resolution-logo-transparent (1).png" alt="">
+                        <img  height="50px" src="logoblueupright.png" alt="">
                     </div>
             
                     <div class="col-sm-3">

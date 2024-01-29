@@ -25,19 +25,62 @@
 <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
 <link rel="manifest" href="../site.webmanifest"></head>
+<style>.inneroption:hover {
+    cursor: pointer;
+    background-color: #B6B6B6;
+    
+}
+
+.logobox {
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    left: 20%;
+    ;
+}
+
+@media (max-width: 576px) {
+    .logo {
+        left: 30%;
+    }
+}
+
+.header {
+    height: 70px;
+    background-color: rgb(31, 44, 63);
+
+}
+
+picture {
+    height: 50px;
+}
+
+.home {
+    box-shadow: -1px 0 0 ivory;
+    height: 50px;
+    padding-top: 13px;
+}
+
+.home,
+.search {
+    text-align: center;
+}</style>
 <body>
     
-	<div style="background-color: rgb(31,44,63);
-    border-radius: 5px;
-    text-align: center;
-    height: 60px;
-    display: flex;
-    justify-content: center;
-	align-items: center;" id="header" class="header"><img height=50px src="../mastermates-high-resolution-logo-transparent.png"></div>
+    <div class="header row align-items-center">
+        <picture class="col-6 col-md-8 logobox">
+            <source media="(min-width:576px)" srcset="../logoblueinline.png">
+            <img class="logo" height=50px src="../logo.png" alt="">
+        </picture>
+        <div class="col-3 col-md-2 home"><a href="../index.html" style="text-decoration: none; color: #B6B6B6;">Home</a></div>
+        <div class="col-3 col-md-2 search"><a href="#" style="text-decoration: none; color: #B6B6B6;">Search
+            </a></div>
+    </div>
 
 
 
-<a href="../index.html">Home</a>
 <article class="all-browsers">
 <h1>What are the types of IALA buoys?</h1>
 <article class="browser">
@@ -100,7 +143,7 @@
     <h5></h5>
     <div class="footer row justify-content-center align-items-center p-2" style="text-decoration: none; color: ivory; background-color: rgb(31,44,63); text-align: center;">
         <div class="col-sm-3 box3 order-sm-last">
-            <img  height="50px" src="mastermates-high-resolution-logo-transparent (1).png" alt="">
+            <img  height="50px" src="logoblueupright.png" alt="">
         </div>
 
         <div class="col-sm-3">

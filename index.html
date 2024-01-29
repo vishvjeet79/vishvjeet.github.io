@@ -11,9 +11,7 @@
     <link rel="stylesheet" href="bootstrap.css">
     <link rel="manifest" href="site.webmanifest">
     <style type="text/css">
-        * {
-            border: black solid 1px;
-        }
+        
 
         .option {
             margin: 2px;
@@ -78,38 +76,60 @@
             width: 50%;
 
         }
+        .inneroption:hover {
+        cursor: pointer;
+        background-color: #B6B6B6;
+        
+    }
+
+    .logobox {
+        position: relative;
+    }
+
+    .logo {
+        position: absolute;
+        left: 20%;
+        ;
+    }
+
+    @media (max-width: 576px) {
+        .logo {
+            left: 30%;
+        }
+    }
+
+    .header {
+        height: 70px;
+        background-color: rgb(31, 44, 63);
+
+    }
+
+    picture {
+        height: 50px;
+    }
+
+    .home {
+        box-shadow: -1px 0 0 ivory;
+        height: 50px;
+        padding-top: 13px;
+    }
+
+    .home,
+    .search {
+        text-align: center;
+    }
     </style>
 </head>
 
 <body>
-    <!-- <div style="background-color: rgb(31,44,63);
-    border-radius: 5px;
-    text-align: center;
-    height: 60px;
-    display: flex;
-    justify-content: center;
-	align-items: center;" id="header" class="header"><img height="50px"
-            src="mastermates-high-resolution-logo-transparent.png"></div> -->
-
-    <div class="container-fluid py-2" style="background-color: rgb(31,44,63); text-align: center;"><img height="50px"
-            src="mastermates-high-resolution-logo-transparent.png"></div>
-    <!--
-    <div class="outerbox">
-        <div class="optionbox">
-            <a href="f1/f1.html">
-                <div class="option">Function 1</div>
-            </a>
-            <a href="f2/f2.html">
-                <div class="option">Function 2</div>
-            </a>
-            <a href="f3/f3.html">
-                <div class="option">Function 3</div>
-            </a>
-            <a href="Past Question Papers/past papers.html">
-                <div class="option">Past Question Papers</div>
-            </a>
-        </div>
-    </div>-->
+            <div class="header row align-items-center">
+                <picture class="col-6 col-md-8 logobox">
+                    <source media="(min-width:576px)" srcset="logoblueinline.png">
+                    <img class="logo" height=50px src="logo.png" alt="">
+                </picture>
+                <div class="col-3 col-md-2 search"><a href="#" style="text-decoration: none; color: #B6B6B6;">Search
+                    </a></div>
+            </div>    
     <div class="outerbox container-fluid vw-100">
         <div class="row vw-100 justify-content-center">
             <div class="col-10 col-sm-10 col-md-7 col-lg-6 " style=" background: rgba(255, 255, 255, 0.45);
@@ -134,7 +154,7 @@
                 <div class="footer row justify-content-center align-items-sm-center p-2"
                     style="text-decoration: none; color: ivory; background-color: rgb(31,44,63); text-align: center;">
                     <div class="col-sm-3 box3 order-sm-last">
-                        <img height="50px" src="mastermates-high-resolution-logo-transparent (1).png" alt="">
+                        <img height="50px" src="logoblueupright.png" alt="">
                     </div>
 
                     <div class="col-sm-3">

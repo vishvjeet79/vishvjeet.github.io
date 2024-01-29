@@ -6,21 +6,48 @@
     <title>Function 2</title>
 <link rel="stylesheet" href="../bootstrap.css">
 <style type="text/css">
-        .inneroption {
-            background-color: lightgray;
-            width: 30%;
-            margin: 5px;
-            display: inline-block;
-            padding: 10px;
-            border: solid darkgray 3px;
-            border-radius: 5px;
-            font-size: x-large;
+        .inneroption:hover {
+        cursor: pointer;
+        background-color: #B6B6B6;
+        
+    }
+
+    .logobox {
+        position: relative;
+    }
+
+    .logo {
+        position: absolute;
+        left: 20%;
+        ;
+    }
+
+    @media (max-width: 576px) {
+        .logo {
+            left: 30%;
         }
-            a:active{text-decoration: none;color: black}	
-            a:hover{text-decoration: none; color: black}
-            a:link{text-decoration: none; color: black}	
-            a:visited{text-decoration: none; color: black}
-            .inneroption:hover{cursor: pointer; background-color: #B6B6B6;}
+    }
+
+    .header {
+        height: 70px;
+        background-color: rgb(31, 44, 63);
+
+    }
+
+    picture {
+        height: 50px;
+    }
+
+    .home {
+        box-shadow: -1px 0 0 ivory;
+        height: 50px;
+        padding-top: 13px;
+    }
+
+    .home,
+    .search {
+        text-align: center;
+    }
         </style>
         
     <link rel="stylesheet" href="content.css">
@@ -29,17 +56,18 @@
     <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
     <link rel="manifest" href="../site.webmanifest"></head>
 <body>
-<div style="background-color: rgb(31,44,63);
-    border-radius: 5px;
-    text-align: center;
-    height: 60px;
-    display: flex;
-    justify-content: center;
-	align-items: center;" id="header" class="header"><img height=50px src="../mastermates-high-resolution-logo-transparent.png"></div>
-    <div class="container-fluid">
+    <div class="header row align-items-center">
+        <picture class="col-6 col-md-8 logobox">
+            <source media="(min-width:576px)" srcset="../logoblueinline.png">
+            <img class="logo" height=50px src="../logo.png" alt="">
+        </picture>
+        <div class="col-3 col-md-2 home"><a href="../index.html" style="text-decoration: none; color: #B6B6B6;">Home</a></div>
+        <div class="col-3 col-md-2 search"><a href="#" style="text-decoration: none; color: #B6B6B6;">Search
+            </a></div>
+    </div>    <div class="container-fluid">
         <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4">
             <div class="col mt-4">
-                <div class="card" style="height: 200px;">
+                <div class="card inneroption" style="height: 200px;">
                     <div class="card-img-top" style="overflow: hidden;">
                         <img class=" card-img" src="ig-plant.jpg" alt="IALA-image">
                     </div>
@@ -50,7 +78,7 @@
                 </div>
             </div>
             <div class="col mt-4">
-                <div class="card" style="height: 200px;">
+                <div class="card inneroption" style="height: 200px;">
                     <div class="card-img-top" style="overflow: hidden;">
                         <img class=" card-img" src="ror.png" alt="ror-head-on">
                     </div>
@@ -61,7 +89,7 @@
                 </div>
             </div>
             <div class="col mt-4">
-                <div class="card" style="height: 200px;">
+                <div class="card inneroption" style="height: 200px;">
                     <div class="card-img-top" style="overflow: hidden;">
                         <img class=" card-img" src="IALA-image.png" alt="IALA-image">
                     </div>
@@ -72,7 +100,7 @@
                 </div>
             </div>
             <div class="col mt-4">
-                <div class="card" style="height: 200px;">
+                <div class="card inneroption" style="height: 200px;">
                     <div class="card-img-top" style="overflow: hidden;">
                         <img class=" card-img" src="IALA-image.png" alt="IALA-image">
                     </div>
@@ -83,7 +111,7 @@
                 </div>
             </div>
             <div class="col mt-4">
-                <div class="card" style="height: 200px;">
+                <div class="card inneroption" style="height: 200px;">
                     <div class="card-img-top" style="overflow: hidden;">
                         <img class=" card-img" src="IALA-image.png" alt="IALA-image">
                     </div>
@@ -94,7 +122,7 @@
                 </div>
             </div>
             <div class="col mt-4">
-                <div class="card" style="height: 200px;">
+                <div class="card inneroption" style="height: 200px;">
                     <div class="card-img-top" style="overflow: hidden;">
                         <img class=" card-img" src="IALA-image.png" alt="IALA-image">
                     </div>
@@ -105,7 +133,7 @@
                 </div>
             </div>
             <div class="col mt-4">
-                <div class="card" style="height: 200px;">
+                <div class="card inneroption" style="height: 200px;">
                     <div class="card-img-top" style="overflow: hidden;">
                         <img class=" card-img" src="IALA-image.png" alt="IALA-image">
                     </div>
@@ -116,7 +144,7 @@
                 </div>
             </div>
             <div class="col mt-4">
-                <div class="card" style="height: 200px;">
+                <div class="card inneroption" style="height: 200px;">
                     <div class="card-img-top" style="overflow: hidden;">
                         <img class=" card-img" src="ror.png" alt="ror-head-on">
                     </div>
@@ -131,7 +159,7 @@
         
             <div class="footer row justify-content-center align-items-center p-2" style="text-decoration: none; color: ivory; background-color: rgb(31,44,63); text-align: center;">
                 <div class="col-sm-3 box3 order-sm-last">
-                    <img  height="50px" src="mastermates-high-resolution-logo-transparent (1).png" alt="">
+                    <img  height="50px" src="logoblueupright.png" alt="">
                 </div>
         
                 <div class="col-sm-3">
