@@ -1,0 +1,139 @@
+.inneroption:hover {
+    cursor: pointer;
+    background-color: #B6B6B6;
+
+}
+
+.logobox {
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    left: 20%;
+
+}
+
+@media screen and (max-width: 576px) {
+    .logo {
+        left: 30%;
+    }
+}
+
+.header {
+    height: 70px;
+    background-color: rgb(31, 44, 63);
+
+}
+
+picture {
+    height: 50px;
+}
+
+.home {
+    box-shadow: -1px 0 0 ivory;
+    height: 50px;
+    padding-top: 13px;
+}
+
+.home,
+.search {
+    text-align: center;
+}
+
+
+.transition {
+    transition: .3s cubic-bezier(.3, 0, 0, 1.3);
+}
+
+.card {
+    background-color: #fff;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.3);
+    height: 250px;
+    overflow: hidden;
+    width: 100%;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.card:hover {
+    transform: scale(1.1);
+
+}
+
+.card:hover .cta-container {
+    display: inline;
+    margin-top: 380px;
+}
+
+.card:hover .card_circle {
+    background-size: cover;
+    border-radius: 50%;
+    margin-top: -100px;
+    background-size: 450px 400px;
+}
+
+.card:hover h2 {
+    background: #3487f7;
+    color: #fff;
+    margin-top: 100px;
+    padding: 5px;
+}
+
+.card:hover h2 small {
+    color: #fff
+}
+
+.card:hover p {
+    margin-top: 300px
+}
+
+.card_circle {
+    
+    background-color: #3487f7;
+    border-radius: 50%;
+    height: 400px;
+    margin-top: -250px;
+    position: absolute;
+    width: 450px;
+
+    ;
+}
+h2 {
+    color: #3487f7;
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 150px;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    z-index: 9999;
+}
+.maincard{padding: 10px;}
+/*p {
+color: rgba(0,0,0,.6);
+font-family: 'Raleway', sans-serif;
+font-size: 100%;
+font-weight: normal;
+margin-top: 200px;
+position: absolute;
+text-align: center;
+z-index: 9999;
+}
+.cta-container {
+display: none;
+margin-top: 320px;
+position: absolute;
+text-align: center;
+width: 100%;
+z-index: 9999;
+}*/
+
+/*backgrounds of cards*/
+.iala{background: url(iala.png) no-repeat center top; background-size: 450px 400px;}
+.ror{background: url(ror1.png) no-repeat center; background-size: 450px 400px;}
+.whp{background: url(whp.jpg) no-repeat center; background-size: 450px 400px;}
+.bpg{background: url(bpg.jpg) no-repeat center; background-size: 450px 400px;}
