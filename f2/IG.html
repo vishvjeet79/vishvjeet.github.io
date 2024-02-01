@@ -17,47 +17,47 @@
         }
 
         .inneroption:hover {
-        cursor: pointer;
-        background-color: #B6B6B6;
-        
-    }
+            cursor: pointer;
+            background-color: #B6B6B6;
 
-    .logobox {
-        position: relative;
-    }
-
-    .logo {
-        position: absolute;
-        left: 20%;
-        ;
-    }
-
-    @media (max-width: 576px) {
-        .logo {
-            left: 30%;
         }
-    }
 
-    .header {
-        height: 70px;
-        background-color: rgb(31, 44, 63);
+        .logobox {
+            position: relative;
+        }
 
-    }
+        .logo {
+            position: absolute;
+            left: 20%;
+            ;
+        }
 
-    picture {
-        height: 50px;
-    }
+        @media (max-width: 576px) {
+            .logo {
+                left: 30%;
+            }
+        }
 
-    .home {
-        box-shadow: -1px 0 0 ivory;
-        height: 50px;
-        padding-top: 13px;
-    }
+        .header {
+            height: 70px;
+            background-color: rgb(31, 44, 63);
 
-    .home,
-    .search {
-        text-align: center;
-    }
+        }
+
+        picture {
+            height: 50px;
+        }
+
+        .home {
+            box-shadow: -1px 0 0 ivory;
+            height: 50px;
+            padding-top: 13px;
+        }
+
+        .home,
+        .search {
+            text-align: center;
+        }
 
         #Q {
             border: 1px black solid;
@@ -69,6 +69,11 @@
     <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
     <link rel="manifest" href="../site.webmanifest">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="../search.js" ></script>
+    <link rel="stylesheet" href="../function.css">
+
 </head>
 
 <body>
@@ -77,9 +82,15 @@
             <source media="(min-width:576px)" srcset="../logoblueinline.png">
             <img class="logo" height=50px src="../logo.png" alt="">
         </picture>
-        <div class="col-3 col-md-2 home"><a href="../index.html" style="text-decoration: none; color: #B6B6B6;">Home</a></div>
-        <div class="col-3 col-md-2 search"><a href="#" style="text-decoration: none; color: #B6B6B6;">Search
-            </a></div>
+        <div class="col-3 col-md-2 home"><a href="../index.html" style="text-decoration: none; color: #B6B6B6;">Home</a>
+        </div>
+        <div class="col-3 col-md-2 search"><button class="sbtn"
+                style="background: none; border: none; color: #B6B6B6;">Search</button></div>
+        <div class="togglesearch">
+            <input type="text" placeholder="" />
+            <input type="button" value="Search" />
+        </div>
+    </div>
     </div>
     <a href="../index.html">Home</a>
     <article class="all-browsers">
@@ -147,24 +158,25 @@
             <p><b>Mast Riser: </b> The mast riser is used for thew pupose of venting to atmosphere.</p>
             <p><b>Cargo tank branches:</b> Each cargo tank is provide with individual IG branch which are fitted with
                 islotaion valve with a locing mechanism.</p>
-                <div class="footer row justify-content-center align-items-center p-2" style="text-decoration: none; color: ivory; background-color: rgb(31,44,63); text-align: center;">
-                    <div class="col-sm-3 box3 order-sm-last">
-                        <img  height="50px" src="logoblueupright.png" alt="">
-                    </div>
-            
-                    <div class="col-sm-3">
-                        <a style="font-size: 14px;" href="about.html">About Us</a></br>
-                        <a style="font-size: 14px;" href="credits.html">Credits</a></br>
-                        <a style="font-size: 14px;" href="contact.html">Contact Us</a></br>
-                        <a style="font-size: 14px;" href="contribute.html">Contribute to Master&Mates</a></br>
-                    </div>
-                    <div class="col-sm-3">
-                        <a style="font-size: 14px;" href="feedback.html">Provide feedback</a></br>
-                        <a style="font-size: 14px;" href="feature-request.html">Request for feature</a></br>
-                        <a style="font-size: 14px;" href="support.html">Support Us</a></br>
-                        <a style="font-size: 14px;" href="">8</a></br>
-                    </div>
-            
+            <div class="footer row justify-content-center align-items-center p-2"
+                style="text-decoration: none; color: ivory; background-color: rgb(31,44,63); text-align: center;">
+                <div class="col-sm-3 box3 order-sm-last">
+                    <img height="50px" src="logoblueupright.png" alt="">
+                </div>
+
+                <div class="col-sm-3">
+                    <a style="font-size: 14px;" href="about.html">About Us</a></br>
+                    <a style="font-size: 14px;" href="credits.html">Credits</a></br>
+                    <a style="font-size: 14px;" href="contact.html">Contact Us</a></br>
+                    <a style="font-size: 14px;" href="contribute.html">Contribute to Master&Mates</a></br>
+                </div>
+                <div class="col-sm-3">
+                    <a style="font-size: 14px;" href="feedback.html">Provide feedback</a></br>
+                    <a style="font-size: 14px;" href="feature-request.html">Request for feature</a></br>
+                    <a style="font-size: 14px;" href="support.html">Support Us</a></br>
+                    <a style="font-size: 14px;" href="">8</a></br>
+                </div>
+
 </body>
 
 </html>

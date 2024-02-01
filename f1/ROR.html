@@ -1,319 +1,675 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ROR</title>
     <style>
         .note {
-        font-size: 120%;
-        color: red;}
+            font-size: 120%;
+            color: red;
+        }
+
         .main {
             color: rgb(0, 255, 110);
-            }
-        .heading{font-family: 'Open Sans', sans-serif; background-color: aquamarine; font-weight: bold; font-style: "Open sans" ; text-align: center; padding: 10px; font-size: xx-large;}
-        .selectf{margin-top:1cm; margin-left: auto; margin-right: auto;}
-        .option{ padding: 5px; padding-left: 1pc; margin: 5px; font-weight: bolder; font-size: 30px; font-family: 'Open Sans', sans-serif; background-image: linear-gradient(45deg, grey, lightgray); transition: ease 0.2s;}
-        .option:hover{ padding-left: 30px;}
-        .option:active{ background-image: linear-gradient(180deg, grey, lightgray); transition: ease 5s}
-        #Q{border: 1px black solid; background-color: lightcyan;}
+        }
+
+        .heading {
+            font-family: 'Open Sans', sans-serif;
+            background-color: aquamarine;
+            font-weight: bold;
+            font-style: "Open sans";
+            text-align: center;
+            padding: 10px;
+            font-size: xx-large;
+        }
+
+        .selectf {
+            margin-top: 1cm;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .option {
+            padding: 5px;
+            padding-left: 1pc;
+            margin: 5px;
+            font-weight: bolder;
+            font-size: 30px;
+            font-family: 'Open Sans', sans-serif;
+            background-image: linear-gradient(45deg, grey, lightgray);
+            transition: ease 0.2s;
+        }
+
+        .option:hover {
+            padding-left: 30px;
+        }
+
+        .option:active {
+            background-image: linear-gradient(180deg, grey, lightgray);
+            transition: ease 5s
+        }
+
+        #Q {
+            border: 1px black solid;
+            background-color: lightcyan;
+        }
+
         p2 {
-  color: rgb(140, 0, 255);
-} 
+            color: rgb(140, 0, 255);
+        }
     </style>
     <link rel="stylesheet" href="../common.css">
     <link rel="stylesheet" href="../bootstrap.css">
-<link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
-<link rel="manifest" href="../site.webmanifest"></head>
-<style>.inneroption:hover {
-    cursor: pointer;
-    background-color: #B6B6B6;
-    
-}
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+    <link rel="manifest" href="../site.webmanifest">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="../search.js" ></script>
+    <link rel="stylesheet" href="../function.css">
 
-.logobox {
-    position: relative;
-}
 
-.logo {
-    position: absolute;
-    left: 20%;
-    ;
-}
+</head>
+<style>
+    .inneroption:hover {
+        cursor: pointer;
+        background-color: #B6B6B6;
 
-@media (max-width: 576px) {
-    .logo {
-        left: 30%;
     }
-}
 
-.header {
-    height: 70px;
-    background-color: rgb(31, 44, 63);
+    .logobox {
+        position: relative;
+    }
 
-}
+    .logo {
+        position: absolute;
+        left: 20%;
+        ;
+    }
 
-picture {
-    height: 50px;
-}
+    @media (max-width: 576px) {
+        .logo {
+            left: 30%;
+        }
+    }
 
-.home {
-    box-shadow: -1px 0 0 ivory;
-    height: 50px;
-    padding-top: 13px;
-}
+    .header {
+        height: 70px;
+        background-color: rgb(31, 44, 63);
 
-.home,
-.search {
-    text-align: center;
-}</style>
+    }
+
+    picture {
+        height: 50px;
+    }
+
+    .home {
+        box-shadow: -1px 0 0 ivory;
+        height: 50px;
+        padding-top: 13px;
+    }
+
+    .home,
+    .search {
+        text-align: center;
+    }
+</style>
+
 <body>
-    
+
     <div class="header row align-items-center">
         <picture class="col-6 col-md-8 logobox">
             <source media="(min-width:576px)" srcset="../logoblueinline.png">
             <img class="logo" height=50px src="../logo.png" alt="">
         </picture>
-        <div class="col-3 col-md-2 home"><a href="../index.html" style="text-decoration: none; color: #B6B6B6;">Home</a></div>
-        <div class="col-3 col-md-2 search"><a href="#" style="text-decoration: none; color: #B6B6B6;">Search
-            </a></div>
+        <div class="col-3 col-md-2 home"><a href="../index.html" style="text-decoration: none; color: #B6B6B6;">Home</a>
+        </div>
+        <div class="col-3 col-md-2 search"><button class="sbtn"
+                style="background: none; border: none; color: #B6B6B6;">Search</button></div>
+        <div class="togglesearch">
+            <input type="text" placeholder="" />
+            <input type="button" value="Search" />
+        </div>
+    </div>
     </div>
 
 
-<article class="all-browsers">
-<h1>COLREGs (Explained)</h1>
-<article class="browser">
-    <p><b> <span class="note" >PART  A - GENERAL</b> </span></p>
-    <p><br></p>
-    <p><b> Rule 1 - Application</b> </p>
-    <p>These Rules shall apply to all vessels upon the high seas and in all waters connected therewith navigable by seagoing vessels.</p>
-    <p2>Meaning: All ships big or small are to follow the rules. Small yachts, fishing vessels and other barges all as long they sail on the seas.
-        All waters connected to the high sea include: major rivers, which have ports on their banks and which are visited by sea going vessels. All bays, and canals which are connected to the seas, provided that they are sailed on by ocean going vessels.
-        </p2>
-    <p> Nothing in these Rules shall interfere with the operation of special Rules made by an appropriate authority for roadsteads, harbours, rivers, lakes or inland waterways connected with the high seas and navigable by seagoing vessels. Such special Rules shall conform as closely as possible to these Rules.</b></p>
-    <p2>Meaning: A harbour or port authority or a country may make some special rules for their port approaches or rivers or anchorage areas; in that case the COLREGS shall not cause confusion in having opposing view to the rules. However the rules that a country or port makes shall not be too dissimilar to the COLREGS</p2>
-    <p>Nothing in these Rules shall interfere with the operation of any special Rules made by the Government of any state with respect to additional station or signal lights, shapes or whistle signals for ships of war and vessels proceeding under convoy, or with respect to additional station or signal lights or shapes for fishing vessels engaged in fishing as a fleet.  These additional station or signal lights, shapes or whistle signals shall, so far as possible, be such that they cannot be mistaken for any light, shape or signal authorized elsewhere under these Rules. </p>
-    <p2> Meaning: If a country has made any special rules which may make compulsory for ships and boats to show additional station or signals or lights for warships or for fishing fleets, then these special rules will again be such that they should not be confusing to a sea going vessel – that is they should not be similar to another signal in the COLREGS with a different meaning.</p2>
-    <p>Traffic separation schemes may be adopted by the Organization for the purpose of these Rules. </p>
-    <p2>Meaning: The IMO may decide at any time and place to impose a traffic separation scheme, which would make it easier to navigate in a major traffic area. The above Traffic Separation Schemes will be for the purpose of enhancing the effectiveness of these COLREGS. </p2>
-    <p> Whenever the Government concerned shall have determined that a 	vessel of special construction or purpose cannot comply fully with the provisions of any of these Rules with respect to the number, position, range or arc of visibility of lights or shapes, as well as to the disposition and characteristics of sound-signaling appliances, such vessel shall comply with such other provisions in regard to the number, position, range or arc of visibility of lights or shapes, as well as to the disposition and characteristics of sound-signaling appliances, as her Government shall have determined to be the closest possible compliance with these Rules in respect of that vessel.</p>
-    <p2>Meaning: If a specially constructed ship (aircraft carrier), which due to the nature of the equipment fitted does not have places where to fit the lights or shapes as required by the COLREGS as specified in the annexes, then a government may allow these special ships to carry their lights or shapes in a different place, but it shall make sure that these are the closest deviation from the COLREGS. That is they are almost similar to those fitted on regular ships. </p2>
-    <p><br></p>
-    <p><b> Rule 2 - Responsibility</b> </p>
-    <p> (a)Nothing in these Rules shall exonerate any vessel, or the owner, master or crew thereof, from the consequences of any neglect to comply with these Rules or of the neglect of any precaution, which may be required by the ordinary practice of seamen, or by the special circumstances of the case.</p>
-    <p2> Meaning: There is no escaping the penalty of not following these rules. Everybody is responsible and no excuses are permitted that  forgot etc. Also there are some practices which are followed by seamen which may not be in the rules but they have been said and in use for many years, even these are included in compliance. This rule was formulated after all the ‘ordinary practice of seamen’ were written down as part of these rules, but some of the ‘ordinary practices’ which may have been overlooked are covered by this rule.
-        Circumstances can dictate a deviation from these rules, like if the seaman thinks that by following the rules in a special situation the action would endanger the ships, in that case a deviation may be permitted which will not endanger the ships.
-        </p2>
-        <p>(b) In construing and complying with these Rules due regard shall be had to all dangers of navigation and collision and to any special circumstances including the limitations of the vessels involved which may make a departure from these Rules necessary to avoid immediate danger.</p>
-        <p2>Meaning: In understanding and then complying with these rules pay close attention to the dangers of navigation and to the circumstances which may arise where blindly following these rules may endanger the ships.
-            For this if required by common sense that to follow the rules would make a situation worse, then an action may be taken which are different from these rules but would have ensured safety for the vessels.
-             </p2>
-             <p><br></p>
-             <p><b> Rule 3 - General Definitions</b> </p>
-             <p>For the purpose of these Rules except where the context otherwise requires: - </p>
-             <p>The world “vessel” includes every description of watercraft including non-displacement craft and seaplanes used or capable of being used as a means of transportation on water. </p>
-             <p2> Meaning: All types of craft that float on water and are used as a means of transportation. Also included are crafts, which do not displace water – such as hovercrafts. A seaplane when on the water displaces water so as long as it is on the surface of water it is considered as a vessel. All barges are also included since no propulsion system has been mentioned in this part of the Rule.</p2>
-             <p>The term “power driven vessel” means any vessel propelled by machinery. </p>
-             <p2>Meaning: Power here means power obtained from machinery, such as diesel engines, from the smallest to the largest, sailing vessels are not included as long as they are purely under sail, vessels under oars are also not included.  </p2>
-             <p>The term “sailing vessel” means any vessel under sail provides that propelling machinery, if fitted is not being used. </p>
-             <p2>Meaning: Sailing vessels of today rely to some form of machinery propulsion, that is when the wind is calm and the sailing vessel is not moving the sailing vessels (some of them) have provision for use of their main engine and propeller. So as long as this main engine on sailing vessels is not used they are termed as sailing vessels, the moment their main engine is started they are termed as power driven vessels, even if they hoist sails.       </p2>
-             <p>The term “vessel engaged in fishing” means any vessel fishing with nets, lines, trawls or other fishing apparatus which restrict maneuverability, but does not include a vessel fishing with trolling lines or other fishing apparatus which do not restrict maneuverability. </p>
-             <p2>Meaning: Fishing vessels means vessels actually fishing and which due to their equipment in the water are unable to move away and keep clear of other vessels. If the fishing vessel is not fishing or is using equipment, which does not restrict their taking evasive, action for safety then they are not termed as fishing vessels. The equipment as specified under the Rules is nets, lines (long line tuna fishing), trawls or other equipment, which are similar. </p2>
-             <p>The word “seaplane” includes any aircraft designed to maneuver on the water. </p>
-             <p2>Meaning: Obvious meaning, an aircraft which in an emergency is landing (ditching) in the water would not be termed as a seaplane, only those planes which by their construction and purpose can safely land, take off and manouevre to a pier or jetty are called seaplanes. </p2>
-             <p>The term “vessel not under command” means a vessel which through some exceptional circumstances is unable to manouevre as required by these Rules and is therefore unable to keep out of the way of another vessel. </p>
-             <p2>Meaning: Here a vessel not under command means any vessel, which because of some reason cannot keep out of the way of other vessels. Like ME breakdown and she cannot anchor, steering failure, launching a rescue boat or a lifeboat. </p2>
-             <p>The term “vessel restricted in her ability to manouevre” means a vessel which from the nature of her work is restricted in her ability to manouevre as required by these Rules and is therefore unable to keep out of the way of another vessel. </p>
-             <p2> Meaning: This includes a ship which is doing some special work by which she can move only in one direction say ahead, but cannot alter her course to take evasive action neither can she slow down or speed up to avoid a collision then in that case the vessel would be restricted in her ability to manoeuvre.
-                The following are the vessels as declared under these Rules to be vessels restricted in their ability to manouevre, however this list is not absolute and final, this is a general guidance for such vessel, any vessel other than those in the list may also be ‘vessels restricted in their ability to manouevre’.
-                 </p2>
-                 <p> The term “vessels restricted in their ability to manouevre” shall include but not limited to:-</p>
-                 <p>     i.      a vessel engaged in laying, servicing or picking up a navigational 	mark, submarine cable or pipeline;</p>
-                 <p>   ii.      A vessel engaged in dredging, surveying or underwater operations; </p>
-                 <p>    iii.      A vessel engaged in replenishment or transferring persons, provisions or 	cargo while underway;</p>
-                 <p>   iv.      A vessel engaged in the launching or recovery of aircraft; </p>
-                 <p>    v.      A vessel engaged in mine clearance operations; </p>
-                 <p>vi.      A vessel engaged in a towing operation such as severely restricts the towing vessel and her tow in their ability to deviate from their course. </p>
-                 <p2>Meaning: shall include but not limited to, this means that the Rules define the following vessels as being restricted in their ability to manoeuvre, but the classification of ships is not limited by the vessels already described, other vessels may also be included if they are also restricted in their ability to manoeuvre. </p2>
-                 <p>The term “vessel constrained by her draught” means a power driven vessel, which, because of her draught in relation to the available depth and width of navigable water, is severely restricted in her ability to deviate from the course she is following. </p>
-                 <p2> Meaning: This is applicable to POWER DRIVEN VESSELS, which because of their draft in comparison to the depth of water at that place is so great that she cannot alter to avoid a collision since to do that they would run aground.
-                    However if there were adequate width of the channel through which they are moving then they would not be classed as constrained by draught.Thus a VLCC with a draft of 18m would be classed as a ‘vessel constrained by her draught’ in a channel where the least depth is 21m (3 m safety for squat etc) and the width of the channel is just 600 metres, but in the Pacific she would be an ordinary vessel.
-                    If the channel or bay is such that all over the bay the depth is as mentioned but the size of the bay is 30NM by 40NM then she would not be a ‘vessel constrained by her draft’.
-                    </p2>
-                    <p> The word “underway” means that a vessel is not at anchor, or made fast to the shore, or aground.</p>
-                    <p2>Meaning: This term is somewhat vague. The opinion has been held that a vessel, which is intentionally, anchored with a proper anchor and intends to hold her position, is anchored. But if the vessel ha dropped her anchor to turn the vessel in a tide or is dredging meaning that the anchor has been dropped underfoot and the vessel is being dragged or is under her own power and is steaming astern (the anchor helps in keeping the bow in line) then in these cases the vessel would not be termed as at anchor.
-                        If the vessel drags her anchor and moves away then too she is not at anchor.
-                        Thus the meaning of at anchor means in relation to the made fast to shore and aground that is the ship cannot move or drift away.
-                         </p2>
-                         <p>The words “length” and “breadth” of a vessel means her overall length and her greatest breadth. </p>
-                         <p2> Meaning: Here LBP does not mean he length. </p2>
-                         <p>Vessels shall be deemed to be in sight of one another only when one can be observed visually from the other. </p>
-                         <p2>Meaning: The vessel being observed should be capable of being seen with the observers eyes and not by any electronic device, this is so because the aspect of the vessel is very important, the human brain analyses data from input more effectively than a electronic device. A change in other vessels heading is very readily apparent when observing visually, by electronic means it has a time lag. </p2>
-                         <p>The term “restricted visibility” means any condition in which visibility is restricted by fog, mist, falling snow, heavy rainstorms, sandstorms or any other similar causes. </p>
-                         <p2>Meaning: Restricted visibility may be caused by any of the above conditions and also by any other means, for example the smoke from forest fires in the Indonesian forests had drastically reduced visibility in the Malacca Straits some years back. </p2>
-                        </article> 
-                        <article class="browser">
-                            <p><b> <span class="note" >Part B - Steering and Sailing Rules</b> </span></p>
-                            <p><b>Section 1-  Conduct of Vessels in any Condition of Visibility</b> </p>
-                                <p><br></p>
-                                <p><b> Rule 4 - Application</b> </p>
-                                <p> </p>
-                                <p2>Meaning: The above section applies to all vessels and under any condition of visibility that is good visibility as well as when under poor visibility whatever the cause may be  </p2>
-                                <p><b> Rule 5 - Look-out</b></p>
-                                <p> Every vessel shall at all times maintain a proper look-out by sight and hearing as by all available means appropriate in the prevailing circumstances and conditions so as to make a full appraisal of the situation and of the risk of collision.</p>
-                                <p2>Meaning: Look out is very important and should take about 70 - 80% of the watch keeping officers time. The rest are to be the full appraisal of what he sees, and the action that is taken by him. Lookout is also for getting the feedback on the action that he or the other ship took to avoid the situation. 
-                                    Look out means to see and understand the situation, by sight and hearing as well by other means which may be by Radar and GPS (position) and by any other electronic devices.
-                                    Appropriate in the prevailing conditions means  in condition of poor visibility, the Radar and ears may be the only means of detecting other vessels, here again the range scale selection should be appropriate, if the vessel is in the middle of a fishing fleet there is no point keeping a watch on 12Nm range and only on one Radar. If 2 Radars exist then one should be set on smaller range and the other on 12Nm for detecting other vessels, if only 1 Radar is available then periodic switches have to be done between smaller scale and a longer scale.
-                                    In any case the echo sounder the log the GPS and the chart and vessels charted position have to be also monitored. Because for a full appraisal of the situation all factors have to be taken into consideration, can the own vessel alter to keep out of the way or is it better to slow down.
-                                     </p2>
-                                     <p><b> Rule 6 - Safe Speed</b></p>
-                                     <p>Every vessel shall at all times proceed at a safe speed so that she can take proper and effective action to avoid collision and be stopped within a distance appropriate to the prevailing circumstances and conditions. </p>
-                                     <p><b> In determining a safe speed the following factors shall be among those taken into account:-</b></p>
-                                     <p2>Meaning: A very difficult statement Safe Speed. Any vessel, which is sailing has some speed and it can cause destruction to others as well as to itself. If the speed is very low and the current is strong she may drift on to any other ship, so a low speed is out under these circumstances. If the speed is great and if the steering fails then she would move away from her course line onto a danger very fast without maybe even an emergency being realized.
-                                        So safe speed means that the ship sails at a speed at which if any emergency occurs she would come out of the emergency without anybody getting injured.
-                                        The basic fact is that under any circumstances the speed should be such that the vessel can take a effective (avoid) action to avoid danger, this includes maneuvering to keep out of the way or slowing down or stopping to allow another vessel to pass clearly. 
-                                        In open sea ME slow down or stopping may not be required and a manouvre in good (well before closing in) time would be fine, but if the sea passage is narrow or the depth is less then ME should also be art stand by. Also if the current is strong or the visibility is poor then in open sea the ME may be required to avoid since the time of observing the vessel may be reduced.
-                                         It is likening to a person running on a racetrack, which is brightly lit  he runs at his maximum speed. Place the same person in a forest at night and then ask him to run, obviously he would run taking into consideration that he may hit a tree or a branch or fall in a ditch. Depending on how well he is seeing he adjusts his speed.
-                                         </p2>
-                                         <p><b> By all vessels:-</b></p>
-<p>The state of visibility; </p>
-<p2>The visibility, if the visibility is affected by any condition then adequate precautions should be taken and the me may be required, the helmsman should also be stand by and if permissible the stand by steering motor switched on.  </p2>
-<p>The traffic density including concentration of fishing vessels or any other vessels; </p>
-<p2>If the traffic density is heavy, and a lot of ships are moving around then the ME has to be on stand by. Since the vessel may have to take emergency measures to avoid danger. The alteration of courses may not be possible due to other vessels in the vicinity. </p2>
-<p>The maneuverability of the vessel with special reference to stopping distance and turning ability in the prevailing conditions; </p>
-<p2>This relates to the peculiar maneuvering characteristics of different vessels, a large fully laden tanker may have stopped her engines after being on full ahead, she then takes emergency action to stop the vessel by going emergency full astern, but the momentum of the vessel is such that she would come to a full stopped condition only after traveling a further distance of maybe a mile. A smaller cargo vessel or the same tanker on ballast in such a condition may have stopped in the water in a distance of maybe less that quarter of a mile. 
-    Again a large tanker fully laden will take a lot of time to initially begin her turn after the wheel is put hard over, and once the vessel starts her swing she keeps swinging and to stop her swing it takes a lot of time wherein the ship may have done a near 360° turn and landed up in another critical situation. A smaller vessel or the same tanker on ballast may not have such problem.
-     </p2>
-<p>At night the presence of background light such as from shore lights or from back scatter of her own lights; </p>
-<p2>The above refers to the state of visibility, a vessel when she leaves a port is surrounded by a lot of bright shore lights, and her navigation lights may be cluttered up with these lights. A lookout on another vessel would not be able to see the vessel departing the port until she comes to a position where the background is dark.
-    The second case refers to back scatter of a vessel's own lights. Backscatter of ships lights is the effect of a brightly lit ship (say at anchor or at sea with the bridge front port holes not covered). The light, which emanates from these sources pick up the microscopic particles of the atmosphere and they are seen as a filter before an observer’s vision.  In cases where this filter is bright it may obscure a distant vessels navigation lights and a look out may detect the vessel when she is quite close.                                           
-     </p2>
-<p>The state of wind, sea and current, and the proximity of navigational hazards; </p>
-<p2>In rough weather with high winds and waves it is difficult to quickly alter the course of a ship the wind and/or the waves prevent or haste the alteration as such the helmsman used to giving a particular helm to alter a course may find that the ship either does not turn or turns very slowly, the correcting helm also is different than usual.
-    A current also makes a ship behave in the above manner.
-    A danger mark or a shallow patch would cause a vessel to later course less than is required as such the need for a ship to be within manageable speed where she can be brought out of one danger without her landing up in another difficult situation.                                         
-     </p2>
-     <p> The draught in relation to the available depth of water</p>
-     <p2> As stated previously the draught in relation to the depth of water – a deep drafted vessel under the circumstances, has to take special precautions in maintaining her speed, her draft is more thus the sea room available for her to take effective action to avoid a close quarter situation has to be effected with the ME performance. Speed thus has to be controllable and the ship if required has to be stopped short of danger.</p2>
-     <p><b>Additionally, by vessels with operational radar:-</b></p>
-     <p2>Today this refers to practically all ocean-going vessels. When it is stated that the vessel has a Radar, it implies that the Radar is fully functional and may be used to keep a Radar watch.
-        And a good Radar lookout can be kept on it.
-         </p2>
-         <p>The characteristics, efficiency and limitations of the radar equipment; </p>    
-<p2>A functional Radar may not be operating at its peak performance, maybe the magnetron has become old, or the centre of the PPI is burnt out or any other causes where the Radar has got peculiarities which are readily apparent to a new observer but may be overlooked by a old ship hand. The Mast and the funnel cast Radar shadows and for a particular ship the watch keepers have to take that in consideration. These peculiarities may in emergencies cause other vessel’s not to be tracked by the Radar. </p2>
-<p>Any constraints imposed by the radar range scale in use; </p>
-<p2>Sometimes a Radar may be fully functional and good but it may have a defect that is it may not detect vessel’s at a certain range or may be not very good at low ranges or on higher ranges. </p2>
-<p>The effect on radar detection of the sea salt, weather and other source of interference; </p>
-<p2>Clutter, a nuisance especially when it is least wanted. Rain clutter is the raindrops sending their reflection back to the observer who is more interested in detecting the ships. Rain clutter may completely obscure an entire region of the horizon on Radar, thus any ships within that particular region will not be detected. Increasing the Rain clutter control on the Radar will reduce the rain clutter but will also remove weak targets.
-    Sea clutter is another hazard, this is more affecting around the proximity of the ship than rain clutter, but the effect is the same the vessels (especially small or when the aspect is poor) are obscured.
-    Other sources include soot from the funnel. Which can seriously impair the performance of the Radar.                                                 
-     </p2>   
-<p> The possibility that small vessels, ice and other floating objects may not be detected by radar at an adequate range;</p>
-<p2>Every modern Radar has a selective clutter control, where the logic is that, the microprocessor within the Radar once it detects a target predicts the next position of the target, if the target fails to appear it removes the target, of course this sequence is not in one sweep but in about 5 sweeps, thus a small vessel if it appears in consistently then the Radar will not detect it.
-    For Ice it is different, the ice reflects the EM wave in a direction that is not towards the scanner and is thus lost and the observer does not see the Ice.                                       
-     </p2>
-     <p>The number, location and movement of vessels detected by radar; </p>
-     <p2>In areas of high traffic density, keeping track of what each ship is doing and also assessing the ship with the most potential risk factor is an exacting task. However with a Radar tracking unit or an ARPA the same can be achieved very easily. The only carefulness that has to be exercised is that the risk factor set data as presented by the Radar, should be evaluated. And an understanding of the situation has to be done.                                                                                                       </p2>
-     <p>The more exact assessment of the visibility that may be possible when radar is used to determine the range of vessels or other objects in the vicinity. </p>
-     <p2>Since Radar observation is not affected to that extent as observation by sight by poor visibility, using the Radar may do an assessment of the visibility and noting down at what range the target was actually seen by the observer.
-        Earlier visibility was estimated by guess work (experience some may call it), but with Radar it is an exact figure, also visibility is not the same all around the ship especially in rain, as such more exact assessment may be done by using the Radar.                                      
-         </p2>  
-         <p><b> Rule 7 - Risk of collision</b></p>
-     <p>Every vessel shall use all available means appropriate to the prevailing circumstances and conditions to determine if risk of collision exists.  If there is any doubt such risk shall be deemed to exist. </p>
-<p2> A famous sentence in the Master’s Night Order book was ‘Whenever in doubt, call me’. This holds true with the above Rule. If the watch keeper is in any doubt even the slightest, he should assume that such risk exists and would have to act according to the Rules.
-    Of course in judging such risk, he has to take into consideration the conditions at that time – state of sea, traffic density, visibility etc.
-    All available means to assess the risk, means all that is available to the watch keeper – visual bearings, Radar tracking or observations and plot, sound signals, VHF traffic, and the like. 
-    In doing the above the chart should be studied, since this will give an indication of the course that the other vessel may be following to either head to or from a port or TSS.
-    Taking all the above the watch keeper has to judge whether even a slight risk exists and if this slight chance does exist then he shall note that RISK does exist.
-    </p2>  
-<p>Proper use shall be made of radar equipment if fitted and operational, including long-range scanning to obtain early warning of risk of collision and radar plotting or equivalent systematic observation of detected objects. </p>
-<p2>Radar is an AID to navigation and its use today is mandatory and essential. The Radar should be used so long as it is functional to warn the watch keeper of the danger in as great a time interval as possible. This implies that the Radar has to be used for long range scanning to detect the ships and do a radar plot to determine whether the ship would pose any hazard or not.
-    Further even if the ARPA is not working the bearing and distance off if plotted would give a fair idea of the risk of collision. The bearing may not be very accurate (see Radar) but over a period of time this in accurate bearing would still indicate whether such risk exists or not. Radar Plotting of course is very helpful in assessing the above. And this is termed as systematic observation.
-     </p2>
-<p>Assumptions shall not be made on the basis of scanty information, especially scanty radar information. </p>
-<p2>Scanty Radar information – if the target has been observed once in a while then the assessment is not correct. The plot is required and then the plot has to be checked by following it up by further observations.
-    ARPA readings may not be accurate in the first set of figures, the ARPA also keeps predicting and updating the figures. Small vessels often disappear from Radar, it does not mean that the ship was never there and that it was a false echo.
-    Target swap takes place frequently on Radar, this gives rise to scanty and wrong information.
-    Remember: after judging a vessel’s track and risk factor it has to be keenly observed to ensure that the data that the watch keeper has obtained is true.
-     </p2>
-     <p><b> In determining if risk of collision exists the following considerations shall be among those taken into account:</b></p>
-     <p>Such risk shall be deemed to exist if the compass hearing of an approaching vessel does not appreciably change; </p>
-     <p2>This fact is the most important. If the bearing changes for a ship at an appreciable range then the risk factor is less, however it has to be remembered that the change of bearing has to be appreciably or else the CPA would be insignificant and thus the risk would still exist.
-        A small change should therefore be viewed with suspicion and a DOUBT should arise in the mind of the observer.
-         </p2>
-     <p>Such risk may sometimes exist even when an appreciable bearing change is evident, particularly when approaching a very large vessel or a tow or when approaching a vessel at close range. </p>
-<p2>As mentioned above the bearing change should be very evident, however sometimes this appreciably large change may not hold true for observations of large vessels which subtend a significant angle at the observer, if the bow was being observed and the aspect of the ship changes from end on to a side then too the bearing change would be evident but that does not mean that the risk does not exist, so for large vessel’s which subtend n angle at the observer care should be exercised.
-    The same holds true for vessels at close range and vessels in tow, where the entire tow and towed present a very large object.
-     </p2>
-     <p><b> Rule 8 - Action to avoid collision</b></p>
-<p>Any action to avoid collision shall, if the circumstances of the case admit, be positive, is made in ample time and with due regard to the observance of good seamanship. </p>
-<p2> Qualification of the action: The action should be positive meaning that it should result in the reduction of the risk of collision, not aggravate it.
-    Should be made in ample time, implying that the assessment should be done in time and obviously that means that the situation should have been observed for quite some time and from a great distance – distance also correlates to the time interval between the time of observation, assessment and the time of the action. No daydreaming and then a wake up call to take action. Be alert.
-    Good seamanship, here a departure may be made from the rules, if for vessel very far on the horizon, it is seen that the vessel lies fine to starboard, also it is noted that for own vessel to alter course to increase the CPA would mean closing in on another danger, then – note she has to be at least 30 mins into the future, the own vessel may alter her course drastically to PORT for some time to increase the CPA. Although it is not recommended, this action may be necessary under these circumstances, rather than land up in a situation where you have the vessel on your starboard and you cannot alter course any further to starboard.
-    </p2>
-<p>Any alteration of course and/or speed to avoid collision shall, if the circumstances of the case admit, be large enough to be readily apparent to another vessel observing visually or by radar; a succession of small alterations of course and/or speed should be avoided. </p>
-<p2> The alteration of course always has to be large enough to be readily apparent to the other vessel. Small changes are not noticeable to other vessels since, the aspect during day time and the navigation light aspect at night may not appreciably differ from what it was before the small alteration of course, the other vessel then would be in doubt as to whether you have taken action or not – panic may set in.
-    Regarding speed change it is still harder to figure out when a vessel reduces from 14 knots to 13 knots, it is apparent if a vessel reduces from 14 knots to directly 10 knots.
-    </p2> 
-<p>If there is sufficient sea-room, alteration of course alone may be the most effective action to avoid a close-quarters situation provided that it is made in good time, is substantial arid does not result in another close-quarter situation. </p>
-<p2>Rather than speed alteration which being rather difficult to observe as such is difficult to assess the situation, and the apparent track remains the same. Thus a course alteration is much more effective in diffusing a dangerous situation and also is readily apparent to the other vessel – provided however that the alteration can be observed very easily by the other vessel.
-    The action should not be where the situation becomes worse, so it has to be done in time when the vessels are far away so that, the action taken can be further assessed, and if rectification is required may be done.
-     </p2>
-<p>Action taken to avoid collision with another vessel shall be such as to result in passing at a safe distance.  The effectiveness of the action shall be carefully checked until the other vessel is finally past and clear. </p>
-<p2>As explained above, all actions have to be assessed after taking them. All actions should diffuse the dangerous situation and the passing of the vessels should be with as wide a margin as possible under the conditions. </p2>
-<p>If necessary to avoid collision or allow more time to assess the situation, a vessel shall slacken her speed or take all way off by stopping or reversing her means of propulsion. </p>
-<p2> The above would happen in waters where ships are going in and out of the harbour limits. Since the ship may not have set a course also that the speed may not have to sufficient, a vessel may head in some different way, especially when transferring pilot etc, under these circumstances it is better to either stop and watch the situation as it develops or even if required to stop the vessel in her tracks – no movement, and then to assess the situation and then move cautiously.</p2>
-<p>(a)A vessel which, by any of these Rules, is required not to impede the passage or safe passage of another vessel shall, when required by the circumstances of the case, take early action to allow sufficient sea room for the safe passage of the other vessel. </p>
-<p>(b)A vessel required not to impede the passage or safe passage for another vessel is not relieved of this obligation if approaching the other vessel so as to involve risk of collision and shall, when taking action, have full regard to the action, which may be required by the Rules of this part. </p>
-<p>(c)A vessel the passage of which is not to be impeded remains fully obliged to comply with the Rules of this part when the two vessels are approaching one another so as to involve risk of collision. </p>
-<p2>All of the above relate to vessels which have been required to keep out of the way of other vessels and not to hinder the passage of another vessel. These vessels should therefore take early action to keep clear, but if they fail then too they are obliged to follow the Rules to avoid a close quarter situation.
-    For the stand on vessel, it still has to follow the Rules irrespective of whether the other vessel takes action or not. Risk of collision at any costs has to be avoided.
-     </p2>
-     <p><b> Rule 9 - Narrow Channels</b></p>
-<p>A vessel proceeding along the course of a narrow channel or fairway shall keep as near to the outer limit of the channel or fairway which lies on her starboard side as is safe and practicable. </p>
-<p2>No ambiguity in this part of the Rule, it is a general advice. As safe and practicable leaves it to the watch keeping officer to take the ultimate decision to deviate from this Rule. If due to the draft or width of the ship as well as the contour of the bottom of the channel it is not safe or is not practicable to comply with this Rule then the watch keeper has his common sense to guide him, keeping always safety in mind. </p2>
-<p>A vessel of less than twenty meters in length or a sailing vessel shall not impede the passage of a vessel which can safely navigate only within a narrow channel or fairway. </p>
-<p2>This again is a guideline for small vessels as well as for sailing crafts to keep away from ships that can safely navigate only within the narrow channel or fairway, since the small vessels and the sailing craft can always use the shallower part of the channel they should not impede the passage of a large ship. </p2>
-<p>A vessel engaged in fishing shall not impede the passage of any other vessel navigating within a narrow channel or fairway. </p>
-<p2>Also a guideline, again please note it is not a fishing vessel but a fishing vessel engaged in the actual task of fishing, so no fishing in the narrow channel or fairway. </p2>
-<p>A vessel shall not cross a narrow channel or fairway if such crossing impedes the passage of a vessel which can safely navigate only within such channel or fairway. – The latter vessel may use the sound signals prescribed in rule 34 (d) if in doubt as to the intention of the crossing vessel. </p>
-<p2> Crossing vessels are warned not to cross the channel or fairway if this crossing should come in the way of a vessel proceeding along the channel who cannot deviate due to the depth or width restriction of the channel.
-    Sound signals have been mentioned which may be used if in any doubt about the intention of either vessel.
-    It does say that a vessel will not cross a channel or fairway – she can do so as long as she does not impede the passage of a ship following the channel.
-    </p2>
-<p>In a narrow channel or fairway when overtaking can take place only if the vessel to be overtaken has to take action to permit safe passage, the vessel intending to overtake shall indicate signal prescribed in rule 34 c (i). The vessel to be overtaken shall, if in agreement, sound the appropriate signal prescribed in rule 34 c (ii) and take steps to permit safe passing. If in doubt she may sound the signals prescribed in rule 34 d. </p>
-<p2>In a narrow channel or fairway overtaking may prove to be difficult, but it may be necessary for some reason, ship behind gets a priority berthing etc. In this case if the vessel behind wants to overtake then she has to sound the signal – Two prolonged blasts followed by one short blast to mean “I intend to overtake you on your starboard side”;
-    Two prolonged blasts followed by two short blasts to mean “I intend to overtake you on your port side”.
-    This is a request signal and has to be answered by the ship ahead either in the affirmative by sounding -, and the ship ahead should go to one side of the channel and allow sea room for the other ship to overtake. Or if refusing to accept the offer by sounding – One prolonged, one short, one prolonged and one short blast, in that order.
-    Only once the confirmation has been received can the ship behind take action. If the answer was positive and overtaking has been permitted then she should first watch the other ship and when the passage has been widened for her she should overtake.
-    If the ship ahead is in any doubt about the sound signal that she heard or at a later stage while overtaking is in progress and she feels that a close quarter situation may develop then she may sound the signal:-
-    at least five short and rapid blasts on the whistle.
-    This rule does not relieve the overtaking vessel of her obligation under rule 30.
-    Okay so the ship ahead has agreed to be overtaken, but the responsibility and obligation as per Rule 30 still remains on the ship behind, she cannot find fault with the ship ahead, if some mishap occurs. This is the reason that she has to make sure that after answering in the positive the ship ahead has made adequate sea room available for her to overtake. Otherwise even if the sound signal is positive she should not overtake, if in doubt she may sound the signal again.
-     </p2>
-<p>The vessel nearing a bend or an area of a narrow channel or fairway where other vessels may be obscured by an intervening obstruction shall navigate with particular alertness and caution and shall sound the appropriate signal prescribed in rule 34 e. </p>
-<p2>Almost like a car sounds a car horn when nearing a crossing, it alerts traffic on the blind side of the bend that a ship is about to cross. This is especially relevant in channels and rivers and fairways where up and down traffic are numerous. </p2>
-<p> Any vessel shall, if the circumstances of the case admit, avoid anchoring in a narrow channel.</p>
-<p2>A general advice, circumstances of the case admit means as far as possible she should not anchor, but if due to some extraordinary circumstances she has to anchor then she should have to warn all vessels and take special care.  </p2>
-<h2> </h2>
-                                <div class="footer row justify-content-center align-items-center p-2" style="text-decoration: none; color: ivory; background-color: rgb(31,44,63); text-align: center;">
-                                    <div class="col-sm-3 box3 order-sm-last">
-                                        <img  height="50px" src="logoblueupright.png" alt="">
-                                    </div>
-                            
-                                    <div class="col-sm-3">
-                                        <a style="font-size: 14px;" href="about.html">About Us</a></br>
-                                        <a style="font-size: 14px;" href="credits.html">Credits</a></br>
-                                        <a style="font-size: 14px;" href="contact.html">Contact Us</a></br>
-                                        <a style="font-size: 14px;" href="contribute.html">Contribute to Master&Mates</a></br>
-                                    </div>
-                                    <div class="col-sm-3">
-                                        <a style="font-size: 14px;" href="feedback.html">Provide feedback</a></br>
-                                        <a style="font-size: 14px;" href="feature-request.html">Request for feature</a></br>
-                                        <a style="font-size: 14px;" href="support.html">Support Us</a></br>
-                                        <a style="font-size: 14px;" href="">8</a></br>
-                                    </div>
-                                </body>
-                                </html>                            
+    <article class="all-browsers">
+        <h1>COLREGs (Explained)</h1>
+        <article class="browser">
+            <p><b> <span class="note">PART A - GENERAL</b> </span></p>
+            <p><br></p>
+            <p><b> Rule 1 - Application</b> </p>
+            <p>These Rules shall apply to all vessels upon the high seas and in all waters connected therewith navigable
+                by seagoing vessels.</p>
+            <p2>Meaning: All ships big or small are to follow the rules. Small yachts, fishing vessels and other barges
+                all as long they sail on the seas.
+                All waters connected to the high sea include: major rivers, which have ports on their banks and which
+                are visited by sea going vessels. All bays, and canals which are connected to the seas, provided that
+                they are sailed on by ocean going vessels.
+            </p2>
+            <p> Nothing in these Rules shall interfere with the operation of special Rules made by an appropriate
+                authority for roadsteads, harbours, rivers, lakes or inland waterways connected with the high seas and
+                navigable by seagoing vessels. Such special Rules shall conform as closely as possible to these
+                Rules.</b></p>
+            <p2>Meaning: A harbour or port authority or a country may make some special rules for their port approaches
+                or rivers or anchorage areas; in that case the COLREGS shall not cause confusion in having opposing view
+                to the rules. However the rules that a country or port makes shall not be too dissimilar to the COLREGS
+            </p2>
+            <p>Nothing in these Rules shall interfere with the operation of any special Rules made by the Government of
+                any state with respect to additional station or signal lights, shapes or whistle signals for ships of
+                war and vessels proceeding under convoy, or with respect to additional station or signal lights or
+                shapes for fishing vessels engaged in fishing as a fleet. These additional station or signal lights,
+                shapes or whistle signals shall, so far as possible, be such that they cannot be mistaken for any light,
+                shape or signal authorized elsewhere under these Rules. </p>
+            <p2> Meaning: If a country has made any special rules which may make compulsory for ships and boats to show
+                additional station or signals or lights for warships or for fishing fleets, then these special rules
+                will again be such that they should not be confusing to a sea going vessel – that is they should not be
+                similar to another signal in the COLREGS with a different meaning.</p2>
+            <p>Traffic separation schemes may be adopted by the Organization for the purpose of these Rules. </p>
+            <p2>Meaning: The IMO may decide at any time and place to impose a traffic separation scheme, which would
+                make it easier to navigate in a major traffic area. The above Traffic Separation Schemes will be for the
+                purpose of enhancing the effectiveness of these COLREGS. </p2>
+            <p> Whenever the Government concerned shall have determined that a vessel of special construction or purpose
+                cannot comply fully with the provisions of any of these Rules with respect to the number, position,
+                range or arc of visibility of lights or shapes, as well as to the disposition and characteristics of
+                sound-signaling appliances, such vessel shall comply with such other provisions in regard to the number,
+                position, range or arc of visibility of lights or shapes, as well as to the disposition and
+                characteristics of sound-signaling appliances, as her Government shall have determined to be the closest
+                possible compliance with these Rules in respect of that vessel.</p>
+            <p2>Meaning: If a specially constructed ship (aircraft carrier), which due to the nature of the equipment
+                fitted does not have places where to fit the lights or shapes as required by the COLREGS as specified in
+                the annexes, then a government may allow these special ships to carry their lights or shapes in a
+                different place, but it shall make sure that these are the closest deviation from the COLREGS. That is
+                they are almost similar to those fitted on regular ships. </p2>
+            <p><br></p>
+            <p><b> Rule 2 - Responsibility</b> </p>
+            <p> (a)Nothing in these Rules shall exonerate any vessel, or the owner, master or crew thereof, from the
+                consequences of any neglect to comply with these Rules or of the neglect of any precaution, which may be
+                required by the ordinary practice of seamen, or by the special circumstances of the case.</p>
+            <p2> Meaning: There is no escaping the penalty of not following these rules. Everybody is responsible and no
+                excuses are permitted that forgot etc. Also there are some practices which are followed by seamen which
+                may not be in the rules but they have been said and in use for many years, even these are included in
+                compliance. This rule was formulated after all the ‘ordinary practice of seamen’ were written down as
+                part of these rules, but some of the ‘ordinary practices’ which may have been overlooked are covered by
+                this rule.
+                Circumstances can dictate a deviation from these rules, like if the seaman thinks that by following the
+                rules in a special situation the action would endanger the ships, in that case a deviation may be
+                permitted which will not endanger the ships.
+            </p2>
+            <p>(b) In construing and complying with these Rules due regard shall be had to all dangers of navigation and
+                collision and to any special circumstances including the limitations of the vessels involved which may
+                make a departure from these Rules necessary to avoid immediate danger.</p>
+            <p2>Meaning: In understanding and then complying with these rules pay close attention to the dangers of
+                navigation and to the circumstances which may arise where blindly following these rules may endanger the
+                ships.
+                For this if required by common sense that to follow the rules would make a situation worse, then an
+                action may be taken which are different from these rules but would have ensured safety for the vessels.
+            </p2>
+            <p><br></p>
+            <p><b> Rule 3 - General Definitions</b> </p>
+            <p>For the purpose of these Rules except where the context otherwise requires: - </p>
+            <p>The world “vessel” includes every description of watercraft including non-displacement craft and
+                seaplanes used or capable of being used as a means of transportation on water. </p>
+            <p2> Meaning: All types of craft that float on water and are used as a means of transportation. Also
+                included are crafts, which do not displace water – such as hovercrafts. A seaplane when on the water
+                displaces water so as long as it is on the surface of water it is considered as a vessel. All barges are
+                also included since no propulsion system has been mentioned in this part of the Rule.</p2>
+            <p>The term “power driven vessel” means any vessel propelled by machinery. </p>
+            <p2>Meaning: Power here means power obtained from machinery, such as diesel engines, from the smallest to
+                the largest, sailing vessels are not included as long as they are purely under sail, vessels under oars
+                are also not included. </p2>
+            <p>The term “sailing vessel” means any vessel under sail provides that propelling machinery, if fitted is
+                not being used. </p>
+            <p2>Meaning: Sailing vessels of today rely to some form of machinery propulsion, that is when the wind is
+                calm and the sailing vessel is not moving the sailing vessels (some of them) have provision for use of
+                their main engine and propeller. So as long as this main engine on sailing vessels is not used they are
+                termed as sailing vessels, the moment their main engine is started they are termed as power driven
+                vessels, even if they hoist sails. </p2>
+            <p>The term “vessel engaged in fishing” means any vessel fishing with nets, lines, trawls or other fishing
+                apparatus which restrict maneuverability, but does not include a vessel fishing with trolling lines or
+                other fishing apparatus which do not restrict maneuverability. </p>
+            <p2>Meaning: Fishing vessels means vessels actually fishing and which due to their equipment in the water
+                are unable to move away and keep clear of other vessels. If the fishing vessel is not fishing or is
+                using equipment, which does not restrict their taking evasive, action for safety then they are not
+                termed as fishing vessels. The equipment as specified under the Rules is nets, lines (long line tuna
+                fishing), trawls or other equipment, which are similar. </p2>
+            <p>The word “seaplane” includes any aircraft designed to maneuver on the water. </p>
+            <p2>Meaning: Obvious meaning, an aircraft which in an emergency is landing (ditching) in the water would not
+                be termed as a seaplane, only those planes which by their construction and purpose can safely land, take
+                off and manouevre to a pier or jetty are called seaplanes. </p2>
+            <p>The term “vessel not under command” means a vessel which through some exceptional circumstances is unable
+                to manouevre as required by these Rules and is therefore unable to keep out of the way of another
+                vessel. </p>
+            <p2>Meaning: Here a vessel not under command means any vessel, which because of some reason cannot keep out
+                of the way of other vessels. Like ME breakdown and she cannot anchor, steering failure, launching a
+                rescue boat or a lifeboat. </p2>
+            <p>The term “vessel restricted in her ability to manouevre” means a vessel which from the nature of her work
+                is restricted in her ability to manouevre as required by these Rules and is therefore unable to keep out
+                of the way of another vessel. </p>
+            <p2> Meaning: This includes a ship which is doing some special work by which she can move only in one
+                direction say ahead, but cannot alter her course to take evasive action neither can she slow down or
+                speed up to avoid a collision then in that case the vessel would be restricted in her ability to
+                manoeuvre.
+                The following are the vessels as declared under these Rules to be vessels restricted in their ability to
+                manouevre, however this list is not absolute and final, this is a general guidance for such vessel, any
+                vessel other than those in the list may also be ‘vessels restricted in their ability to manouevre’.
+            </p2>
+            <p> The term “vessels restricted in their ability to manouevre” shall include but not limited to:-</p>
+            <p> i. a vessel engaged in laying, servicing or picking up a navigational mark, submarine cable or pipeline;
+            </p>
+            <p> ii. A vessel engaged in dredging, surveying or underwater operations; </p>
+            <p> iii. A vessel engaged in replenishment or transferring persons, provisions or cargo while underway;</p>
+            <p> iv. A vessel engaged in the launching or recovery of aircraft; </p>
+            <p> v. A vessel engaged in mine clearance operations; </p>
+            <p>vi. A vessel engaged in a towing operation such as severely restricts the towing vessel and her tow in
+                their ability to deviate from their course. </p>
+            <p2>Meaning: shall include but not limited to, this means that the Rules define the following vessels as
+                being restricted in their ability to manoeuvre, but the classification of ships is not limited by the
+                vessels already described, other vessels may also be included if they are also restricted in their
+                ability to manoeuvre. </p2>
+            <p>The term “vessel constrained by her draught” means a power driven vessel, which, because of her draught
+                in relation to the available depth and width of navigable water, is severely restricted in her ability
+                to deviate from the course she is following. </p>
+            <p2> Meaning: This is applicable to POWER DRIVEN VESSELS, which because of their draft in comparison to the
+                depth of water at that place is so great that she cannot alter to avoid a collision since to do that
+                they would run aground.
+                However if there were adequate width of the channel through which they are moving then they would not be
+                classed as constrained by draught.Thus a VLCC with a draft of 18m would be classed as a ‘vessel
+                constrained by her draught’ in a channel where the least depth is 21m (3 m safety for squat etc) and the
+                width of the channel is just 600 metres, but in the Pacific she would be an ordinary vessel.
+                If the channel or bay is such that all over the bay the depth is as mentioned but the size of the bay is
+                30NM by 40NM then she would not be a ‘vessel constrained by her draft’.
+            </p2>
+            <p> The word “underway” means that a vessel is not at anchor, or made fast to the shore, or aground.</p>
+            <p2>Meaning: This term is somewhat vague. The opinion has been held that a vessel, which is intentionally,
+                anchored with a proper anchor and intends to hold her position, is anchored. But if the vessel ha
+                dropped her anchor to turn the vessel in a tide or is dredging meaning that the anchor has been dropped
+                underfoot and the vessel is being dragged or is under her own power and is steaming astern (the anchor
+                helps in keeping the bow in line) then in these cases the vessel would not be termed as at anchor.
+                If the vessel drags her anchor and moves away then too she is not at anchor.
+                Thus the meaning of at anchor means in relation to the made fast to shore and aground that is the ship
+                cannot move or drift away.
+            </p2>
+            <p>The words “length” and “breadth” of a vessel means her overall length and her greatest breadth. </p>
+            <p2> Meaning: Here LBP does not mean he length. </p2>
+            <p>Vessels shall be deemed to be in sight of one another only when one can be observed visually from the
+                other. </p>
+            <p2>Meaning: The vessel being observed should be capable of being seen with the observers eyes and not by
+                any electronic device, this is so because the aspect of the vessel is very important, the human brain
+                analyses data from input more effectively than a electronic device. A change in other vessels heading is
+                very readily apparent when observing visually, by electronic means it has a time lag. </p2>
+            <p>The term “restricted visibility” means any condition in which visibility is restricted by fog, mist,
+                falling snow, heavy rainstorms, sandstorms or any other similar causes. </p>
+            <p2>Meaning: Restricted visibility may be caused by any of the above conditions and also by any other means,
+                for example the smoke from forest fires in the Indonesian forests had drastically reduced visibility in
+                the Malacca Straits some years back. </p2>
+        </article>
+        <article class="browser">
+            <p><b> <span class="note">Part B - Steering and Sailing Rules</b> </span></p>
+            <p><b>Section 1- Conduct of Vessels in any Condition of Visibility</b> </p>
+            <p><br></p>
+            <p><b> Rule 4 - Application</b> </p>
+            <p> </p>
+            <p2>Meaning: The above section applies to all vessels and under any condition of visibility that is good
+                visibility as well as when under poor visibility whatever the cause may be </p2>
+            <p><b> Rule 5 - Look-out</b></p>
+            <p> Every vessel shall at all times maintain a proper look-out by sight and hearing as by all available
+                means appropriate in the prevailing circumstances and conditions so as to make a full appraisal of the
+                situation and of the risk of collision.</p>
+            <p2>Meaning: Look out is very important and should take about 70 - 80% of the watch keeping officers time.
+                The rest are to be the full appraisal of what he sees, and the action that is taken by him. Lookout is
+                also for getting the feedback on the action that he or the other ship took to avoid the situation.
+                Look out means to see and understand the situation, by sight and hearing as well by other means which
+                may be by Radar and GPS (position) and by any other electronic devices.
+                Appropriate in the prevailing conditions means in condition of poor visibility, the Radar and ears may
+                be the only means of detecting other vessels, here again the range scale selection should be
+                appropriate, if the vessel is in the middle of a fishing fleet there is no point keeping a watch on 12Nm
+                range and only on one Radar. If 2 Radars exist then one should be set on smaller range and the other on
+                12Nm for detecting other vessels, if only 1 Radar is available then periodic switches have to be done
+                between smaller scale and a longer scale.
+                In any case the echo sounder the log the GPS and the chart and vessels charted position have to be also
+                monitored. Because for a full appraisal of the situation all factors have to be taken into
+                consideration, can the own vessel alter to keep out of the way or is it better to slow down.
+            </p2>
+            <p><b> Rule 6 - Safe Speed</b></p>
+            <p>Every vessel shall at all times proceed at a safe speed so that she can take proper and effective action
+                to avoid collision and be stopped within a distance appropriate to the prevailing circumstances and
+                conditions. </p>
+            <p><b> In determining a safe speed the following factors shall be among those taken into account:-</b></p>
+            <p2>Meaning: A very difficult statement Safe Speed. Any vessel, which is sailing has some speed and it can
+                cause destruction to others as well as to itself. If the speed is very low and the current is strong she
+                may drift on to any other ship, so a low speed is out under these circumstances. If the speed is great
+                and if the steering fails then she would move away from her course line onto a danger very fast without
+                maybe even an emergency being realized.
+                So safe speed means that the ship sails at a speed at which if any emergency occurs she would come out
+                of the emergency without anybody getting injured.
+                The basic fact is that under any circumstances the speed should be such that the vessel can take a
+                effective (avoid) action to avoid danger, this includes maneuvering to keep out of the way or slowing
+                down or stopping to allow another vessel to pass clearly.
+                In open sea ME slow down or stopping may not be required and a manouvre in good (well before closing in)
+                time would be fine, but if the sea passage is narrow or the depth is less then ME should also be art
+                stand by. Also if the current is strong or the visibility is poor then in open sea the ME may be
+                required to avoid since the time of observing the vessel may be reduced.
+                It is likening to a person running on a racetrack, which is brightly lit he runs at his maximum speed.
+                Place the same person in a forest at night and then ask him to run, obviously he would run taking into
+                consideration that he may hit a tree or a branch or fall in a ditch. Depending on how well he is seeing
+                he adjusts his speed.
+            </p2>
+            <p><b> By all vessels:-</b></p>
+            <p>The state of visibility; </p>
+            <p2>The visibility, if the visibility is affected by any condition then adequate precautions should be taken
+                and the me may be required, the helmsman should also be stand by and if permissible the stand by
+                steering motor switched on. </p2>
+            <p>The traffic density including concentration of fishing vessels or any other vessels; </p>
+            <p2>If the traffic density is heavy, and a lot of ships are moving around then the ME has to be on stand by.
+                Since the vessel may have to take emergency measures to avoid danger. The alteration of courses may not
+                be possible due to other vessels in the vicinity. </p2>
+            <p>The maneuverability of the vessel with special reference to stopping distance and turning ability in the
+                prevailing conditions; </p>
+            <p2>This relates to the peculiar maneuvering characteristics of different vessels, a large fully laden
+                tanker may have stopped her engines after being on full ahead, she then takes emergency action to stop
+                the vessel by going emergency full astern, but the momentum of the vessel is such that she would come to
+                a full stopped condition only after traveling a further distance of maybe a mile. A smaller cargo vessel
+                or the same tanker on ballast in such a condition may have stopped in the water in a distance of maybe
+                less that quarter of a mile.
+                Again a large tanker fully laden will take a lot of time to initially begin her turn after the wheel is
+                put hard over, and once the vessel starts her swing she keeps swinging and to stop her swing it takes a
+                lot of time wherein the ship may have done a near 360° turn and landed up in another critical situation.
+                A smaller vessel or the same tanker on ballast may not have such problem.
+            </p2>
+            <p>At night the presence of background light such as from shore lights or from back scatter of her own
+                lights; </p>
+            <p2>The above refers to the state of visibility, a vessel when she leaves a port is surrounded by a lot of
+                bright shore lights, and her navigation lights may be cluttered up with these lights. A lookout on
+                another vessel would not be able to see the vessel departing the port until she comes to a position
+                where the background is dark.
+                The second case refers to back scatter of a vessel's own lights. Backscatter of ships lights is the
+                effect of a brightly lit ship (say at anchor or at sea with the bridge front port holes not covered).
+                The light, which emanates from these sources pick up the microscopic particles of the atmosphere and
+                they are seen as a filter before an observer’s vision. In cases where this filter is bright it may
+                obscure a distant vessels navigation lights and a look out may detect the vessel when she is quite
+                close.
+            </p2>
+            <p>The state of wind, sea and current, and the proximity of navigational hazards; </p>
+            <p2>In rough weather with high winds and waves it is difficult to quickly alter the course of a ship the
+                wind and/or the waves prevent or haste the alteration as such the helmsman used to giving a particular
+                helm to alter a course may find that the ship either does not turn or turns very slowly, the correcting
+                helm also is different than usual.
+                A current also makes a ship behave in the above manner.
+                A danger mark or a shallow patch would cause a vessel to later course less than is required as such the
+                need for a ship to be within manageable speed where she can be brought out of one danger without her
+                landing up in another difficult situation.
+            </p2>
+            <p> The draught in relation to the available depth of water</p>
+            <p2> As stated previously the draught in relation to the depth of water – a deep drafted vessel under the
+                circumstances, has to take special precautions in maintaining her speed, her draft is more thus the sea
+                room available for her to take effective action to avoid a close quarter situation has to be effected
+                with the ME performance. Speed thus has to be controllable and the ship if required has to be stopped
+                short of danger.</p2>
+            <p><b>Additionally, by vessels with operational radar:-</b></p>
+            <p2>Today this refers to practically all ocean-going vessels. When it is stated that the vessel has a Radar,
+                it implies that the Radar is fully functional and may be used to keep a Radar watch.
+                And a good Radar lookout can be kept on it.
+            </p2>
+            <p>The characteristics, efficiency and limitations of the radar equipment; </p>
+            <p2>A functional Radar may not be operating at its peak performance, maybe the magnetron has become old, or
+                the centre of the PPI is burnt out or any other causes where the Radar has got peculiarities which are
+                readily apparent to a new observer but may be overlooked by a old ship hand. The Mast and the funnel
+                cast Radar shadows and for a particular ship the watch keepers have to take that in consideration. These
+                peculiarities may in emergencies cause other vessel’s not to be tracked by the Radar. </p2>
+            <p>Any constraints imposed by the radar range scale in use; </p>
+            <p2>Sometimes a Radar may be fully functional and good but it may have a defect that is it may not detect
+                vessel’s at a certain range or may be not very good at low ranges or on higher ranges. </p2>
+            <p>The effect on radar detection of the sea salt, weather and other source of interference; </p>
+            <p2>Clutter, a nuisance especially when it is least wanted. Rain clutter is the raindrops sending their
+                reflection back to the observer who is more interested in detecting the ships. Rain clutter may
+                completely obscure an entire region of the horizon on Radar, thus any ships within that particular
+                region will not be detected. Increasing the Rain clutter control on the Radar will reduce the rain
+                clutter but will also remove weak targets.
+                Sea clutter is another hazard, this is more affecting around the proximity of the ship than rain
+                clutter, but the effect is the same the vessels (especially small or when the aspect is poor) are
+                obscured.
+                Other sources include soot from the funnel. Which can seriously impair the performance of the Radar.
+            </p2>
+            <p> The possibility that small vessels, ice and other floating objects may not be detected by radar at an
+                adequate range;</p>
+            <p2>Every modern Radar has a selective clutter control, where the logic is that, the microprocessor within
+                the Radar once it detects a target predicts the next position of the target, if the target fails to
+                appear it removes the target, of course this sequence is not in one sweep but in about 5 sweeps, thus a
+                small vessel if it appears in consistently then the Radar will not detect it.
+                For Ice it is different, the ice reflects the EM wave in a direction that is not towards the scanner and
+                is thus lost and the observer does not see the Ice.
+            </p2>
+            <p>The number, location and movement of vessels detected by radar; </p>
+            <p2>In areas of high traffic density, keeping track of what each ship is doing and also assessing the ship
+                with the most potential risk factor is an exacting task. However with a Radar tracking unit or an ARPA
+                the same can be achieved very easily. The only carefulness that has to be exercised is that the risk
+                factor set data as presented by the Radar, should be evaluated. And an understanding of the situation
+                has to be done. </p2>
+            <p>The more exact assessment of the visibility that may be possible when radar is used to determine the
+                range of vessels or other objects in the vicinity. </p>
+            <p2>Since Radar observation is not affected to that extent as observation by sight by poor visibility, using
+                the Radar may do an assessment of the visibility and noting down at what range the target was actually
+                seen by the observer.
+                Earlier visibility was estimated by guess work (experience some may call it), but with Radar it is an
+                exact figure, also visibility is not the same all around the ship especially in rain, as such more exact
+                assessment may be done by using the Radar.
+            </p2>
+            <p><b> Rule 7 - Risk of collision</b></p>
+            <p>Every vessel shall use all available means appropriate to the prevailing circumstances and conditions to
+                determine if risk of collision exists. If there is any doubt such risk shall be deemed to exist. </p>
+            <p2> A famous sentence in the Master’s Night Order book was ‘Whenever in doubt, call me’. This holds true
+                with the above Rule. If the watch keeper is in any doubt even the slightest, he should assume that such
+                risk exists and would have to act according to the Rules.
+                Of course in judging such risk, he has to take into consideration the conditions at that time – state of
+                sea, traffic density, visibility etc.
+                All available means to assess the risk, means all that is available to the watch keeper – visual
+                bearings, Radar tracking or observations and plot, sound signals, VHF traffic, and the like.
+                In doing the above the chart should be studied, since this will give an indication of the course that
+                the other vessel may be following to either head to or from a port or TSS.
+                Taking all the above the watch keeper has to judge whether even a slight risk exists and if this slight
+                chance does exist then he shall note that RISK does exist.
+            </p2>
+            <p>Proper use shall be made of radar equipment if fitted and operational, including long-range scanning to
+                obtain early warning of risk of collision and radar plotting or equivalent systematic observation of
+                detected objects. </p>
+            <p2>Radar is an AID to navigation and its use today is mandatory and essential. The Radar should be used so
+                long as it is functional to warn the watch keeper of the danger in as great a time interval as possible.
+                This implies that the Radar has to be used for long range scanning to detect the ships and do a radar
+                plot to determine whether the ship would pose any hazard or not.
+                Further even if the ARPA is not working the bearing and distance off if plotted would give a fair idea
+                of the risk of collision. The bearing may not be very accurate (see Radar) but over a period of time
+                this in accurate bearing would still indicate whether such risk exists or not. Radar Plotting of course
+                is very helpful in assessing the above. And this is termed as systematic observation.
+            </p2>
+            <p>Assumptions shall not be made on the basis of scanty information, especially scanty radar information.
+            </p>
+            <p2>Scanty Radar information – if the target has been observed once in a while then the assessment is not
+                correct. The plot is required and then the plot has to be checked by following it up by further
+                observations.
+                ARPA readings may not be accurate in the first set of figures, the ARPA also keeps predicting and
+                updating the figures. Small vessels often disappear from Radar, it does not mean that the ship was never
+                there and that it was a false echo.
+                Target swap takes place frequently on Radar, this gives rise to scanty and wrong information.
+                Remember: after judging a vessel’s track and risk factor it has to be keenly observed to ensure that the
+                data that the watch keeper has obtained is true.
+            </p2>
+            <p><b> In determining if risk of collision exists the following considerations shall be among those taken
+                    into account:</b></p>
+            <p>Such risk shall be deemed to exist if the compass hearing of an approaching vessel does not appreciably
+                change; </p>
+            <p2>This fact is the most important. If the bearing changes for a ship at an appreciable range then the risk
+                factor is less, however it has to be remembered that the change of bearing has to be appreciably or else
+                the CPA would be insignificant and thus the risk would still exist.
+                A small change should therefore be viewed with suspicion and a DOUBT should arise in the mind of the
+                observer.
+            </p2>
+            <p>Such risk may sometimes exist even when an appreciable bearing change is evident, particularly when
+                approaching a very large vessel or a tow or when approaching a vessel at close range. </p>
+            <p2>As mentioned above the bearing change should be very evident, however sometimes this appreciably large
+                change may not hold true for observations of large vessels which subtend a significant angle at the
+                observer, if the bow was being observed and the aspect of the ship changes from end on to a side then
+                too the bearing change would be evident but that does not mean that the risk does not exist, so for
+                large vessel’s which subtend n angle at the observer care should be exercised.
+                The same holds true for vessels at close range and vessels in tow, where the entire tow and towed
+                present a very large object.
+            </p2>
+            <p><b> Rule 8 - Action to avoid collision</b></p>
+            <p>Any action to avoid collision shall, if the circumstances of the case admit, be positive, is made in
+                ample time and with due regard to the observance of good seamanship. </p>
+            <p2> Qualification of the action: The action should be positive meaning that it should result in the
+                reduction of the risk of collision, not aggravate it.
+                Should be made in ample time, implying that the assessment should be done in time and obviously that
+                means that the situation should have been observed for quite some time and from a great distance –
+                distance also correlates to the time interval between the time of observation, assessment and the time
+                of the action. No daydreaming and then a wake up call to take action. Be alert.
+                Good seamanship, here a departure may be made from the rules, if for vessel very far on the horizon, it
+                is seen that the vessel lies fine to starboard, also it is noted that for own vessel to alter course to
+                increase the CPA would mean closing in on another danger, then – note she has to be at least 30 mins
+                into the future, the own vessel may alter her course drastically to PORT for some time to increase the
+                CPA. Although it is not recommended, this action may be necessary under these circumstances, rather than
+                land up in a situation where you have the vessel on your starboard and you cannot alter course any
+                further to starboard.
+            </p2>
+            <p>Any alteration of course and/or speed to avoid collision shall, if the circumstances of the case admit,
+                be large enough to be readily apparent to another vessel observing visually or by radar; a succession of
+                small alterations of course and/or speed should be avoided. </p>
+            <p2> The alteration of course always has to be large enough to be readily apparent to the other vessel.
+                Small changes are not noticeable to other vessels since, the aspect during day time and the navigation
+                light aspect at night may not appreciably differ from what it was before the small alteration of course,
+                the other vessel then would be in doubt as to whether you have taken action or not – panic may set in.
+                Regarding speed change it is still harder to figure out when a vessel reduces from 14 knots to 13 knots,
+                it is apparent if a vessel reduces from 14 knots to directly 10 knots.
+            </p2>
+            <p>If there is sufficient sea-room, alteration of course alone may be the most effective action to avoid a
+                close-quarters situation provided that it is made in good time, is substantial arid does not result in
+                another close-quarter situation. </p>
+            <p2>Rather than speed alteration which being rather difficult to observe as such is difficult to assess the
+                situation, and the apparent track remains the same. Thus a course alteration is much more effective in
+                diffusing a dangerous situation and also is readily apparent to the other vessel – provided however that
+                the alteration can be observed very easily by the other vessel.
+                The action should not be where the situation becomes worse, so it has to be done in time when the
+                vessels are far away so that, the action taken can be further assessed, and if rectification is required
+                may be done.
+            </p2>
+            <p>Action taken to avoid collision with another vessel shall be such as to result in passing at a safe
+                distance. The effectiveness of the action shall be carefully checked until the other vessel is finally
+                past and clear. </p>
+            <p2>As explained above, all actions have to be assessed after taking them. All actions should diffuse the
+                dangerous situation and the passing of the vessels should be with as wide a margin as possible under the
+                conditions. </p2>
+            <p>If necessary to avoid collision or allow more time to assess the situation, a vessel shall slacken her
+                speed or take all way off by stopping or reversing her means of propulsion. </p>
+            <p2> The above would happen in waters where ships are going in and out of the harbour limits. Since the ship
+                may not have set a course also that the speed may not have to sufficient, a vessel may head in some
+                different way, especially when transferring pilot etc, under these circumstances it is better to either
+                stop and watch the situation as it develops or even if required to stop the vessel in her tracks – no
+                movement, and then to assess the situation and then move cautiously.</p2>
+            <p>(a)A vessel which, by any of these Rules, is required not to impede the passage or safe passage of
+                another vessel shall, when required by the circumstances of the case, take early action to allow
+                sufficient sea room for the safe passage of the other vessel. </p>
+            <p>(b)A vessel required not to impede the passage or safe passage for another vessel is not relieved of this
+                obligation if approaching the other vessel so as to involve risk of collision and shall, when taking
+                action, have full regard to the action, which may be required by the Rules of this part. </p>
+            <p>(c)A vessel the passage of which is not to be impeded remains fully obliged to comply with the Rules of
+                this part when the two vessels are approaching one another so as to involve risk of collision. </p>
+            <p2>All of the above relate to vessels which have been required to keep out of the way of other vessels and
+                not to hinder the passage of another vessel. These vessels should therefore take early action to keep
+                clear, but if they fail then too they are obliged to follow the Rules to avoid a close quarter
+                situation.
+                For the stand on vessel, it still has to follow the Rules irrespective of whether the other vessel takes
+                action or not. Risk of collision at any costs has to be avoided.
+            </p2>
+            <p><b> Rule 9 - Narrow Channels</b></p>
+            <p>A vessel proceeding along the course of a narrow channel or fairway shall keep as near to the outer limit
+                of the channel or fairway which lies on her starboard side as is safe and practicable. </p>
+            <p2>No ambiguity in this part of the Rule, it is a general advice. As safe and practicable leaves it to the
+                watch keeping officer to take the ultimate decision to deviate from this Rule. If due to the draft or
+                width of the ship as well as the contour of the bottom of the channel it is not safe or is not
+                practicable to comply with this Rule then the watch keeper has his common sense to guide him, keeping
+                always safety in mind. </p2>
+            <p>A vessel of less than twenty meters in length or a sailing vessel shall not impede the passage of a
+                vessel which can safely navigate only within a narrow channel or fairway. </p>
+            <p2>This again is a guideline for small vessels as well as for sailing crafts to keep away from ships that
+                can safely navigate only within the narrow channel or fairway, since the small vessels and the sailing
+                craft can always use the shallower part of the channel they should not impede the passage of a large
+                ship. </p2>
+            <p>A vessel engaged in fishing shall not impede the passage of any other vessel navigating within a narrow
+                channel or fairway. </p>
+            <p2>Also a guideline, again please note it is not a fishing vessel but a fishing vessel engaged in the
+                actual task of fishing, so no fishing in the narrow channel or fairway. </p2>
+            <p>A vessel shall not cross a narrow channel or fairway if such crossing impedes the passage of a vessel
+                which can safely navigate only within such channel or fairway. – The latter vessel may use the sound
+                signals prescribed in rule 34 (d) if in doubt as to the intention of the crossing vessel. </p>
+            <p2> Crossing vessels are warned not to cross the channel or fairway if this crossing should come in the way
+                of a vessel proceeding along the channel who cannot deviate due to the depth or width restriction of the
+                channel.
+                Sound signals have been mentioned which may be used if in any doubt about the intention of either
+                vessel.
+                It does say that a vessel will not cross a channel or fairway – she can do so as long as she does not
+                impede the passage of a ship following the channel.
+            </p2>
+            <p>In a narrow channel or fairway when overtaking can take place only if the vessel to be overtaken has to
+                take action to permit safe passage, the vessel intending to overtake shall indicate signal prescribed in
+                rule 34 c (i). The vessel to be overtaken shall, if in agreement, sound the appropriate signal
+                prescribed in rule 34 c (ii) and take steps to permit safe passing. If in doubt she may sound the
+                signals prescribed in rule 34 d. </p>
+            <p2>In a narrow channel or fairway overtaking may prove to be difficult, but it may be necessary for some
+                reason, ship behind gets a priority berthing etc. In this case if the vessel behind wants to overtake
+                then she has to sound the signal – Two prolonged blasts followed by one short blast to mean “I intend to
+                overtake you on your starboard side”;
+                Two prolonged blasts followed by two short blasts to mean “I intend to overtake you on your port side”.
+                This is a request signal and has to be answered by the ship ahead either in the affirmative by sounding
+                -, and the ship ahead should go to one side of the channel and allow sea room for the other ship to
+                overtake. Or if refusing to accept the offer by sounding – One prolonged, one short, one prolonged and
+                one short blast, in that order.
+                Only once the confirmation has been received can the ship behind take action. If the answer was positive
+                and overtaking has been permitted then she should first watch the other ship and when the passage has
+                been widened for her she should overtake.
+                If the ship ahead is in any doubt about the sound signal that she heard or at a later stage while
+                overtaking is in progress and she feels that a close quarter situation may develop then she may sound
+                the signal:-
+                at least five short and rapid blasts on the whistle.
+                This rule does not relieve the overtaking vessel of her obligation under rule 30.
+                Okay so the ship ahead has agreed to be overtaken, but the responsibility and obligation as per Rule 30
+                still remains on the ship behind, she cannot find fault with the ship ahead, if some mishap occurs. This
+                is the reason that she has to make sure that after answering in the positive the ship ahead has made
+                adequate sea room available for her to overtake. Otherwise even if the sound signal is positive she
+                should not overtake, if in doubt she may sound the signal again.
+            </p2>
+            <p>The vessel nearing a bend or an area of a narrow channel or fairway where other vessels may be obscured
+                by an intervening obstruction shall navigate with particular alertness and caution and shall sound the
+                appropriate signal prescribed in rule 34 e. </p>
+            <p2>Almost like a car sounds a car horn when nearing a crossing, it alerts traffic on the blind side of the
+                bend that a ship is about to cross. This is especially relevant in channels and rivers and fairways
+                where up and down traffic are numerous. </p2>
+            <p> Any vessel shall, if the circumstances of the case admit, avoid anchoring in a narrow channel.</p>
+            <p2>A general advice, circumstances of the case admit means as far as possible she should not anchor, but if
+                due to some extraordinary circumstances she has to anchor then she should have to warn all vessels and
+                take special care. </p2>
+            <h2> </h2>
+            <div class="footer row justify-content-center align-items-center p-2"
+                style="text-decoration: none; color: ivory; background-color: rgb(31,44,63); text-align: center;">
+                <div class="col-sm-3 box3 order-sm-last">
+                    <img height="50px" src="logoblueupright.png" alt="">
+                </div>
+
+                <div class="col-sm-3">
+                    <a style="font-size: 14px;" href="about.html">About Us</a></br>
+                    <a style="font-size: 14px;" href="credits.html">Credits</a></br>
+                    <a style="font-size: 14px;" href="contact.html">Contact Us</a></br>
+                    <a style="font-size: 14px;" href="contribute.html">Contribute to Master&Mates</a></br>
+                </div>
+                <div class="col-sm-3">
+                    <a style="font-size: 14px;" href="feedback.html">Provide feedback</a></br>
+                    <a style="font-size: 14px;" href="feature-request.html">Request for feature</a></br>
+                    <a style="font-size: 14px;" href="support.html">Support Us</a></br>
+                    <a style="font-size: 14px;" href="">8</a></br>
+                </div>
+</body>
+
+</html>

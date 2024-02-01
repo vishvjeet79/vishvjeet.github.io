@@ -1,28 +1,29 @@
-
-*{
+* {
     padding: 0;
     margin: 0;
-    background-color: rgb(255,255,255);
+    background-color: rgb(255, 255, 255);
 }
 
-.Suggestion-Box{
-     top: 50%;
-     left: 50%;
-     position: absolute;
-     transform: translate(-50%,-50%);
-     width: 600px;
-     border: solid black 2px;  
-     border-radius: 10px;
-     padding:10px;   
+.Suggestion-Box {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    border: solid black 2px;
+    border-radius: 10px;
+    padding: 10px;
 }
+
 .Suggestion-Box h2 {
- font-size: 20px;
- margin-bottom: 15px; 
- margin: 15px; 
-  
+    font-size: 20px;
+    margin-bottom: 15px;
+    margin: 15px;
+
 
 }
-.Suggestion-Box input{
+
+.Suggestion-Box input {
     width: 200px;
     height: 50px;
     padding: 0 20px;
@@ -30,12 +31,13 @@
     border-radius: 5px;
     border: solid 1px #86b086;
 }
-.Suggestion-Box input:focus{
+
+.Suggestion-Box input:focus {
     border: 1px solid #000;
     outline: 0;
     margin: 15px;
 
-} 
+}
 
 .Suggestion-Box textarea {
     width: 477px;
@@ -45,12 +47,14 @@
     border-radius: 5px;
     border: solid 1px #86b086;
 }
+
 .Suggestion-Box textarea:focus {
     border: 1px solid #000;
     outline: 0;
     margin: 15px;
 
 }
+
 /*.Suggestion-Box button {
    border: 0;
    padding: 10 px 30px;
@@ -66,7 +70,7 @@
 */
 .Suggestion-Box button {
     position: absolute;
-    left:230px;
+    left: 230px;
     width: 6.5em;
     height: 2.3em;
     margin: auto;
@@ -80,13 +84,13 @@
     position: relative;
     z-index: 1;
     overflow: hidden;
-   }
-   
-   .Suggestion-Box button:hover {
+}
+
+.Suggestion-Box button:hover {
     color: black;
-   }
-   
-   .Suggestion-Box button:after {
+}
+
+.Suggestion-Box button:after {
     content: "";
     background: white;
     position: absolute;
@@ -97,10 +101,10 @@
     bottom: 0;
     transform: skewX(-45deg) scale(0, 1);
     transition: all 0.5s;
-   }
-   
-   .Suggestion-Box button:hover:after {
+}
+
+.Suggestion-Box button:hover:after {
     transform: skewX(-45deg) scale(1, 1);
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
-   }
+}

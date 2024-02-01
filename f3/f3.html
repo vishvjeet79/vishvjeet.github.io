@@ -26,7 +26,11 @@
         window.onresize = marginFunction;
         window.onload = marginFunction; 
     </script>
-</head>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <script src="../search.js" ></script>
+
+    </head>
 
 <body>
     <div class="header row align-items-center">
@@ -36,8 +40,13 @@
         </picture>
         <div class="col-3 col-md-2 home"><a href="../index.html" style="text-decoration: none; color: #B6B6B6;">Home</a>
         </div>
-        <div class="col-3 col-md-2 search"><a href="#" style="text-decoration: none; color: #B6B6B6;">Search
-            </a></div>
+        <div class="col-3 col-md-2 search"><button class="sbtn"
+                style="background: none; border: none; color: #B6B6B6;">Search</button></div>
+        <div class="togglesearch">
+            <input type="text" placeholder="" />
+            <input type="button" value="Search" />
+        </div>
+    </div>
     </div>
     <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 justify-content-around">
         <div class="col">
@@ -45,7 +54,7 @@
                 <div class="card transition  ">
                     <h2 class="transition">Maintenance of Lifeboat</h2>
                     <!--<div class="cta-container transition"><p>Insert some text here to show on hover</p></div>-->
-                    <div class="card_circle transition iala"></div>
+                    <div class="card_circle transition lboat"></div>
                 </div>
             </a>
         </div>
@@ -54,7 +63,7 @@
                 <div class="card transition">
                     <h2 class="transition">Hydrostatic Release Unit</h2>
                     <!--<div class="cta-container transition"><p>Insert some text here to show on hover</p></div>-->
-                    <div class="card_circle transition ror"></div>
+                    <div class="card_circle transition hru"></div>
                 </div>
             </a>
         </div>
@@ -63,7 +72,7 @@
                 <div class="card transition">
                     <h2 class="transition">Types of Fire Extinguishers</h2>
                     <!--<div class="cta-container transition"><p>Insert some text here to show on hover</p></div>-->
-                    <div class="card_circle transition whp"></div>
+                    <div class="card_circle transition ffe"></div>
                 </div>
             </a>
         </div>
@@ -72,7 +81,7 @@
                 <div class="card transition">
                     <h2 class="transition">Grain Stability Criteria</h2>
                     <!--<div class="cta-container transition"><p>Insert some text here to show on hover</p></div>-->
-                    <div class="card_circle transition bpg"></div>
+                    <div class="card_circle transition grn"></div>
                 </div>
             </a>
         </div>
@@ -88,7 +97,7 @@
         <div class="col">
             <a class="maincard" href="IALA boyage.html">
                 <div class="card transition">
-                    <h2  class="transition">Hazards of coal</h2>
+                    <h2 class="transition">Hazards of coal</h2>
                     <!--<div class="cta-container transition"><p>Insert some text here to show on hover</p></div>-->
                     <div class="card_circle transition"></div>
                 </div>

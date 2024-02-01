@@ -9,10 +9,9 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="function.css">
     <link rel="manifest" href="site.webmanifest">
     <style type="text/css">
-        
-
         .option {
             margin: 2px;
             padding: 10px;
@@ -76,60 +75,70 @@
             width: 50%;
 
         }
+
         .inneroption:hover {
-        cursor: pointer;
-        background-color: #B6B6B6;
-        
-    }
+            cursor: pointer;
+            background-color: #B6B6B6;
 
-    .logobox {
-        position: relative;
-    }
-
-    .logo {
-        position: absolute;
-        left: 20%;
-        ;
-    }
-
-    @media (max-width: 576px) {
-        .logo {
-            left: 30%;
         }
-    }
 
-    .header {
-        height: 70px;
-        background-color: rgb(31, 44, 63);
+        .logobox {
+            position: relative;
+        }
 
-    }
+        .logo {
+            position: absolute;
+            left: 20%;
+            ;
+        }
 
-    picture {
-        height: 50px;
-    }
+        @media (max-width: 576px) {
+            .logo {
+                left: 30%;
+            }
+        }
 
-    .home {
-        box-shadow: -1px 0 0 ivory;
-        height: 50px;
-        padding-top: 13px;
-    }
+        .header {
+            height: 70px;
+            background-color: rgb(31, 44, 63);
 
-    .home,
-    .search {
-        text-align: center;
-    }
+        }
+
+        picture {
+            height: 50px;
+        }
+
+        .home {
+            box-shadow: -1px 0 0 ivory;
+            height: 50px;
+            padding-top: 13px;
+        }
+
+        .home,
+        .search {
+            text-align: center;
+        }
     </style>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="search.js" ></script>
+
+
 </head>
 
 <body>
-            <div class="header row align-items-center">
-                <picture class="col-6 col-md-8 logobox">
-                    <source media="(min-width:576px)" srcset="logoblueinline.png">
-                    <img class="logo" height=50px src="logo.png" alt="">
-                </picture>
-                <div class="col-3 col-md-2 search"><a href="#" style="text-decoration: none; color: #B6B6B6;">Search
-                    </a></div>
-            </div>    
+    <div class="header row align-items-center">
+        <picture class="col-6 col-md-8 logobox">
+            <source media="(min-width:576px)" srcset="logoblueinline.png">
+            <img class="logo" height=50px src="logo.png" alt="">
+        </picture>
+        <div class="col-3 col-md-2 search"><button class="sbtn"
+                style="background: none; border: none; color: #B6B6B6;">Search</button></div>
+        <div class="togglesearch">
+            <input type="text" placeholder="" />
+            <input type="button" value="Search" />
+        </div>
+    </div>
     <div class="outerbox container-fluid vw-100">
         <div class="row vw-100 justify-content-center">
             <div class="col-10 col-sm-10 col-md-7 col-lg-6 " style=" background: rgba(255, 255, 255, 0.45);
@@ -147,28 +156,28 @@
 
                 </div>
             </div>
-            </div>
-            </div>
-            <div>
+        </div>
+    </div>
+    <div>
 
-                <div class="footer row justify-content-center align-items-sm-center p-2"
-                    style="text-decoration: none; color: ivory; background-color: rgb(31,44,63); text-align: center;">
-                    <div class="col-sm-3 box3 order-sm-last">
-                        <img height="50px" src="logoblueupright.png" alt="">
-                    </div>
+        <div class="footer row justify-content-center align-items-sm-center p-2"
+            style="text-decoration: none; color: ivory; background-color: rgb(31,44,63); text-align: center;">
+            <div class="col-sm-3 box3 order-sm-last">
+                <img height="50px" src="logoblueupright.png" alt="">
+            </div>
 
-                    <div class="col-sm-3">
-                        <a style="font-size: 14px; " href="about.html">About Us</a></br>
-                        <a style="font-size: 14px;" href="credits.html">Credits</a></br>
-                        <a style="font-size: 14px;" href="contact.html">Contact Us</a></br>
-                        <a style="font-size: 14px;" href="contribute.html">Contribute to Master&Mates</a></br>
-                    </div>
-                    <div class="col-sm-3">
-                        <a style="font-size: 14px;" href="feedback.html">Provide feedback</a></br>
-                        <a style="font-size: 14px;" href="request.html">Request for feature</a></br>
-                        <a style="font-size: 14px;" href="support.html">Support Us</a></br>
-                        <a style="font-size: 14px;" href="">8</a></br>
-                    </div>
+            <div class="col-sm-3">
+                <a style="font-size: 14px; " href="about.html">About Us</a></br>
+                <a style="font-size: 14px;" href="credits.html">Credits</a></br>
+                <a style="font-size: 14px;" href="contact.html">Contact Us</a></br>
+                <a style="font-size: 14px;" href="contribute.html">Contribute to Master&Mates</a></br>
+            </div>
+            <div class="col-sm-3">
+                <a style="font-size: 14px;" href="feedback.html">Provide feedback</a></br>
+                <a style="font-size: 14px;" href="request.html">Request for feature</a></br>
+                <a style="font-size: 14px;" href="support.html">Support Us</a></br>
+                <a style="font-size: 14px;" href="">8</a></br>
+            </div>
 </body>
 
 </html>

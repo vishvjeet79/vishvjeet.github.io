@@ -26,6 +26,8 @@
         window.onresize = marginFunction;
         window.onload = marginFunction; 
     </script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -36,8 +38,13 @@
         </picture>
         <div class="col-3 col-md-2 home"><a href="../index.html" style="text-decoration: none; color: #B6B6B6;">Home</a>
         </div>
-        <div class="col-3 col-md-2 search"><a href="#" style="text-decoration: none; color: #B6B6B6;">Search
-            </a></div>
+        <div class="col-3 col-md-2 search"><button class="sbtn"
+                style="background: none; border: none; color: #B6B6B6;">Search</button></div>
+        <div class="togglesearch">
+            <input type="text" placeholder="" />
+            <input type="button" value="Search" />
+        </div>
+    </div>
     </div>
     <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 justify-content-around">
         <div class="col">
@@ -45,7 +52,7 @@
                 <div class="card transition  ">
                     <h2 class="transition">Inert Gas Systems</h2>
                     <!--<div class="cta-container transition"><p>Insert some text here to show on hover</p></div>-->
-                    <div class="card_circle transition iala"></div>
+                    <div class="card_circle transition ig"></div>
                 </div>
             </a>
         </div>
@@ -54,7 +61,7 @@
                 <div class="card transition">
                     <h2 class="transition">Cargo Securing Manual</h2>
                     <!--<div class="cta-container transition"><p>Insert some text here to show on hover</p></div>-->
-                    <div class="card_circle transition ror"></div>
+                    <div class="card_circle transition csm"></div>
                 </div>
             </a>
         </div>
@@ -63,7 +70,7 @@
                 <div class="card transition">
                     <h2 class="transition">Chain Register</h2>
                     <!--<div class="cta-container transition"><p>Insert some text here to show on hover</p></div>-->
-                    <div class="card_circle transition whp"></div>
+                    <div class="card_circle transition chnrg"></div>
                 </div>
             </a>
         </div>
@@ -72,7 +79,7 @@
                 <div class="card transition">
                     <h2 class="transition">Grain Stability Criteria</h2>
                     <!--<div class="cta-container transition"><p>Insert some text here to show on hover</p></div>-->
-                    <div class="card_circle transition bpg"></div>
+                    <div class="card_circle transition grn"></div>
                 </div>
             </a>
         </div>
@@ -81,16 +88,16 @@
                 <div class="card transition">
                     <h2 class="transition">Hazards of Bulk cargoes</h2>
                     <!--<div class="cta-container transition"><p>Insert some text here to show on hover</p></div>-->
-                    <div class="card_circle transition"></div>
+                    <div class="card_circle transition bulk"></div>
                 </div>
             </a>
         </div>
         <div class="col">
             <a class="maincard" href="IALA boyage.html">
                 <div class="card transition">
-                    <h2  class="transition">Hazards of coal</h2>
+                    <h2 class="transition">Hazards of coal</h2>
                     <!--<div class="cta-container transition"><p>Insert some text here to show on hover</p></div>-->
-                    <div class="card_circle transition"></div>
+                    <div class="card_circle transition coal"></div>
                 </div>
             </a>
         </div>
@@ -99,7 +106,7 @@
                 <div class="card transition">
                     <h2 class="transition abc">Container Markings</h2>
                     <!--<div class="cta-container transition"><p>Insert some text here to show on hover</p></div>-->
-                    <div class="card_circle transition"></div>
+                    <div class="card_circle transition cntr"></div>
                 </div>
             </a>
         </div>
