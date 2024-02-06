@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script>
+   $(".sbtn").click(function () {
+        $(".togglesearch").toggle();
+       $("input[type='text']").focus();
+       });
+</script>
+<link rel="stylesheet" href="bootstrap.css">
+<link rel="stylesheet" href="function.css">
+<link rel="apple-touch-ico" sizes="180x180" href="../apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+<link rel="manifest" href="../site.webmanifest">
+<script src="../search.js" ></script>
+</head>
+<body>
+       <div class="header row align-items-center">
+               <picture class="col-6 col-md-8 logobox">
+               <source media="(min-width:576px)" srcset="../logoblueinline.png">
+               <img class="logo" height=50px src="../logo.png" alt="">
+               </picture>
+       <div class="col-3 col-md-2 home"><a href="../index.html" style="text-decoration: none; color: #B6B6B6;">Home</a>
+       </div>
+       <div class="col-3 col-md-2 search"><button class="sbtn"
+       style="background: none; border: none; color: #B6B6B6;">Search</button></div>
+               <div class="togglesearch">
+                       <input type="text" placeholder="" />
+                       <input type="button" value="Search" />
+       </div>
+       </div>
+
+    <nav class="row justify-content-center px-1">
+        <div class="col-3 col-sm-2">Function 1</div>
+        <div class="col-3 col-sm-2">Function 2</div>
+        <div class="col-3 col-sm-2">Function 3</div>
+        <div class="dropdown col-3 col-sm-2">
+            <button class="dropbtn">Search
+            </button>
+            <div class="dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+          </div>
+    </nav>
+
+
+<div class="footer row justify-content-center pt-sm-4"
+style="text-decoration: none; color: ivory; background-color: rgb(31,44,63); text-align: center;">
+<div class="col-sm-3 box3 order-sm-last">
+    <img height="50px" src="../logoblueupright.png" alt="">
+</div>
+
+<div class="col-sm-3">
+    <a style="font-size: 14px; text-decoration: none; color: ivory;" href="about.html">About Us</a></br>
+    <a style="font-size: 14px; text-decoration: none; color: ivory;" href="credits.html">Credits</a></br>
+    <a style="font-size: 14px; text-decoration: none; color: ivory;" href="contact.html">Contact Us</a></br>
+    <a style="font-size: 14px; text-decoration: none; color: ivory;" href="contribute.html">Contribute to
+        Master&Mates</a></br>
+</div>
+<div class="col-sm-3">
+    <a style="font-size: 14px; text-decoration: none; color: ivory;" href="feedback.html">Provide
+        feedback</a></br>
+    <a style="font-size: 14px; text-decoration: none; color: ivory;" href="feature-request.html">Request for
+        feature</a></br>
+    <a style="font-size: 14px; text-decoration: none; color: ivory;" href="support.html">Support Us</a></br>
+    <a style="font-size: 14px; text-decoration: none; color: ivory;" href="">8</a></br>
+</div>
+</div>
+</body>
+</html>
