@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lifejackets</title>
+    <style>
+        .note {
+            font-size: 120%;
+            color: red;
+        }
+
+        .main {
+            color: rgb(0, 255, 110);
+        }
+
+        .heading {
+            font-family: 'Open Sans', sans-serif;
+            background-color: aquamarine;
+            font-weight: bold;
+            font-style: "Open sans";
+            text-align: center;
+            padding: 10px;
+            font-size: xx-large;
+        }
+
+        .selectf {
+            margin-top: 1cm;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .option {
+            padding: 5px;
+            padding-left: 1pc;
+            margin: 5px;
+            font-weight: bolder;
+            font-size: 30px;
+            font-family: 'Open Sans', sans-serif;
+            background-image: linear-gradient(45deg, grey, lightgray);
+            transition: ease 0.2s;
+        }
+
+        .option:hover {
+            padding-left: 30px;
+        }
+
+        .option:active {
+            background-image: linear-gradient(180deg, grey, lightgray);
+            transition: ease 5s
+        }
+
+        #Q {
+            border: 1px black solid;
+            background-color: lightcyan;
+        }
+    </style>
+    <link rel="stylesheet" href="../common.css">
+    <link rel="stylesheet" href="../bootstrap.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+    <link rel="manifest" href="../site.webmanifest">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="../search.js" ></script>
+    <link rel="stylesheet" href="../function.css">
+
+
+</head>
+<style>
+    .inneroption:hover {
+        cursor: pointer;
+        background-color: #B6B6B6;
+
+    }
+
+    .logobox {
+        position: relative;
+    }
+
+    .logo {
+        position: absolute;
+        left: 20%;
+        ;
+    }
+
+    @media (max-width: 576px) {
+        .logo {
+            left: 30%;
+        }
+    }
+
+    .header {
+        height: 70px;
+        background-color: rgb(31, 44, 63);
+
+    }
+
+    picture {
+        height: 50px;
+    }
+
+    .home {
+        box-shadow: -1px 0 0 ivory;
+        height: 50px;
+        padding-top: 13px;
+    }
+
+    .home,
+    .search {
+        text-align: center;
+    }
+    table, th, td {
+    border:1px solid black;
+  }
+</style>
+
+<body>
+
+    <div class="header row align-items-center">
+        <picture class="col-6 col-md-8 logobox">
+            <source media="(min-width:576px)" srcset="../logoblueinline.png">
+            <img class="logo" height=50px src="../logo.png" alt="">
+        </picture>
+        <div class="col-3 col-md-2 home"><a href="../index.html" style="text-decoration: none; color: #B6B6B6;">Home</a>
+        </div>
+        <div class="col-3 col-md-2 search"><button class="sbtn"
+                style="background: none; border: none; color: #B6B6B6;">Search</button></div>
+        <div class="togglesearch">
+            <input type="text" placeholder="" />
+            <input type="button" value="Search" />
+        </div>
+    </div>
+    </div>
+    <article class="all-browsers">
+    <h1>  Lifejackets</h1>
+    <article class="browser">
+        <p>1. not sustain burning or continue melting after being totally enveloped in a fire for a period
+            of 2 s </p>
+        <p>2.clearly capable of being worn in only one way or inside-out and, if donned incorrectly, it is
+            not injurious to the wearer </p>
+        <p>3.at least 75% of persons who are completely unfamiliar with the lifejacket can correctly don it
+            within a period of 1 min without assistance, guidance </p>
+        <p>4.after demonstration, all persons can correctly don it within a period of 1 min without assistance </p>
+        <p>5.it is comfortable to wear </p>
+        <p>6.allows the wearer to jump into the water from a height of at least 4.5 m while holding on to
+            the lifejacket </p>
+        <p>7.allows the wearer to jump into the water from a height of at least 1m with arms held overhead </p>
+        <p>8.allow the person wearing it to swim a short distance and to board a survival craft </p>
+        <p>9.buoyancy not reduced by more than 5% after 24 h submersion in fresh water </p>
+        <p>10.fitted with a whistle firmly secured by a lanyard </p>
+        <p>11.provided with a releasable buoyant line or other means to secure it to a lifejacket
+            worn by another person in the water </p>
+        <p>12.provided with a suitable means to allow a rescuer to lift the wearer from the water
+            into a survival craft or rescue boat. </p>
+        <p> </p>
+    </article>
+    <h1>  Lifejacket  sizing criteria</h1>
+    <article class="browser">
+        <p>Lifejackets shall be provided in three sizes which are <b>Infant,Child,and Adult</b>.</p>
+        <p> Lifejackets shall be marked by either<b> weight or height</b>.</p>
+        
+        <table style="width:100%">
+            <tr>
+                <th>Lifejacket marking</td>
+              <th>Infant</th>
+              <th>Child</th>
+              <th>Adult</th>
+            </tr>
+            <tr>
+                <th>Weight (kg)</th>
+                <td>less than 15</td>
+                <td>15 or more but
+                    less than 43</td>
+                    <td>43 or more</td>
+                    </tr>
+                    <tr>
+                        <th>Height(cm)</th>
+                        <td>less than 100</td>
+                        <td>100 or more but
+                            less than 155</td>
+                            <td>155 or more</td>
+                    </tr>
+          </table>
+          <p><b>Note:If an adult lifejacket is not designed to fit persons weighing up to 140 kg and with a chest girth of up to
+            1,750 mm then</b> suitable accessories shall be available to allow it to be secured to such persons</p>
+        </article>  
+            <h1>  Lifejacket Light</h1>
+            <article class="browser">
+                <p>1.be of white colour</p>
+                <p>2.be visible in all directions of the upper hemisphere</p>
+                <p>3.have a luminous intensity of not less than 0.75 cd</p>
+                <p>4.have a source of energy for a period of at least 8 h</p>
+                <p><b>Note-If the light is a flashing light, it shall, in addition:</b></p>
+                <p>1.provided with <b>a manually operated switch</b></p>
+                <p>2.flash at a rate of not less than 50 flashes and not more than 70 flashes per minute </p>
+   
+
+        <h5></h5>
+        <div class="footer row justify-content-center align-items-center p-2"
+            style="text-decoration: none; color: ivory; background-color: rgb(31,44,63); text-align: center;">
+            <div class="col-sm-3 box3 order-sm-last">
+                <img height="50px" src="logoblueupright.png" alt="">
+            </div>
+
+            <div class="col-sm-3">
+                <a style="font-size: 14px;" href="about.html">About Us</a></br>
+                <a style="font-size: 14px;" href="credits.html">Credits</a></br>
+                <a style="font-size: 14px;" href="contact.html">Contact Us</a></br>
+                <a style="font-size: 14px;" href="contribute.html">Contribute to Master&Mates</a></br>
+            </div>
+            <div class="col-sm-3">
+                <a style="font-size: 14px;" href="feedback.html">Provide feedback</a></br>
+                <a style="font-size: 14px;" href="feature-request.html">Request for feature</a></br>
+                <a style="font-size: 14px;" href="support.html">Support Us</a></br>
+                <a style="font-size: 14px;" href="">8</a></br>
+            </div>
+</body>
+
+</html>

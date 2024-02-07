@@ -4,70 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LSA</title>
-    <style>
-        .note {
-        font-size: 120%;
-        color: red;}
-        .main {
-            color: rgb(0, 255, 110);
-            }
-        .heading{font-family: 'Open Sans', sans-serif; background-color: aquamarine; font-weight: bold; font-style: "Open sans" ; text-align: center; padding: 10px; font-size: xx-large;}
-        .selectf{margin-top:1cm; margin-left: auto; margin-right: auto;}
-        .option{ padding: 5px; padding-left: 1pc; margin: 5px; font-weight: bolder; font-size: 30px; font-family: 'Open Sans', sans-serif; background-image: linear-gradient(45deg, grey, lightgray); transition: ease 0.2s;}
-        .option:hover{ padding-left: 30px;}
-        .option:active{ background-image: linear-gradient(180deg, grey, lightgray); transition: ease 5s}
-        #Q{border: 1px black solid; background-color: lightcyan;}
-        
-    </style>
-    <link rel="stylesheet" href="../common.css">
-    <link rel="stylesheet" href="../bootstrap.css">
-<link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script>
+   $(".sbtn").click(function () {
+        $(".togglesearch").toggle();
+       $("input[type='text']").focus();
+       });
+</script>
+<link rel="stylesheet" href="../bootstrap.css">
+<link rel="stylesheet" href="../function.css">
+<link rel="apple-touch-ico" sizes="180x180" href="../apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
-<link rel="manifest" href="../site.webmanifest"></head>
-<style>.inneroption:hover {
-    cursor: pointer;
-    background-color: #B6B6B6;
-    
-}
-
-.logobox {
-    position: relative;
-}
-
-.logo {
-    position: absolute;
-    left: 20%;
-    ;
-}
-
-@media (max-width: 576px) {
-    .logo {
-        left: 30%;
-    }
-}
-
-.header {
-    height: 70px;
-    background-color: rgb(31, 44, 63);
-
-}
-
-picture {
-    height: 50px;
-}
-
-.home {
-    box-shadow: -1px 0 0 ivory;
-    height: 50px;
-    padding-top: 13px;
-}
-
-.home,
-.search {
-    text-align: center;
-}</style>
+<link rel="manifest" href="../site.webmanifest">
+<script src="../search.js" ></script>
+</head>
 <body>
+<<<<<<< HEAD:f3/bla.html
     
         <header class="container-fluid" style="background-color: rgb(31,44,63);">
         <div class="container" style="background-color: rgb(31,44,63);">
@@ -91,96 +44,101 @@ picture {
             </div>
         </div>
     </header>
+=======
+       <div class="header row align-items-center">
+               <picture class="col-6 col-md-8 logobox">
+               <source media="(min-width:576px)" srcset="../logoblueinline.png">
+               <img class="logo" height=50px src="../logo.png" alt="">
+               </picture>
+       <div class="col-3 col-md-2 home"><a href="../index.html" style="text-decoration: none; color: #B6B6B6;">Home</a>
+       </div>
+       <div class="col-3 col-md-2 search"><button class="sbtn"
+       style="background: none; border: none; color: #B6B6B6;">Search</button></div>
+               <div class="togglesearch">
+                       <input type="text" placeholder="" />
+                       <input type="button" value="Search" />
+       </div>
+       </div>
 
+>>>>>>> f52814758224ce2203f0a4cbccb2fe2f8fbd1b8f:f3/LSA.html
 
-<article class="all-browsers">
-<h1>General requirements for life-saving appliances?</h1>
-<article class="browser">
-    <P>1. constructed with proper workmanship and materials</P>
-    <P>2.not be damaged in stowage throughout the air temperature range -30°C to +65°C C and,<B> in the
-        case of personal life-saving appliances</B>, unless otherwise specified, remain operational
-        throughout the air temperature range -15°C to +40°C;</P>
-    <P>3.if they are likely to be immersed in seawater during their use, operate throughout the seawater
-        temperature range -1°C to + 30</P>
-    <P>4., be rot-proof, corrosion-resistant, and not be unduly affected by seawater, oil
-        or fungal attack;</P>
-    <P>5.where exposed to sunlight, be resistant to deterioration</P>
-    <P>6.be of international or vivid reddish orange, or a comparably highly visible colour on all parts
-        where this will assist detection at sea</P>
-    <P>7.be fitted with retro-reflective material where it will assist in detection and in accordance with the
-        recommendations of the Organization</P>
-    <P>8.If they are to be used in a seaway, be capable of satisfactory operation in that environment</P>
-</article>
-<h1> Lifebuoys</h1>
-<article class="browser">
-    <img src="lifebuoy.jpg" width="310" height="200" alt="Lifebuoy">
-    <p>1.an outer diameter of not more than 800 mm</p>
-    <p>2 an inner diameter of not less than 400
-        mm</p>
-    <p>3.be constructed of inherently buoyant material </p>
-    <p>4.be capable of supporting not less than 14.5 kg of iron in fresh water for a period of 24 h </p>
-    <p>5.have a mass of not less than 2.5 kg; </p>
-    <p>6.not sustain burning or continue melting after being totally enveloped in a fire for a period of 2 s </p>
-    <p>7.be fitted with a grabline not less than 9.5 mm in diameter and not less than 4 times the outside
-        diameter of the body of the buoy in length </p>
-    <p>8.The grabline shall be secured at four equidistant
-            points around the circumference of the buoy to form four equal loops </p>
-    <p>9.if it is intended to operate the quick release arrangement provided for the self-activated smoke
-        signals and self-igniting lights, have a mass of not less than 4 kg </p>   
-</article>
-<h1>  Lifebuoy self-igniting lights</h1>
-<article class="browser">
-    <img src="" width="310" height="200" alt="Lifebuoy">
-    <p>1.be such that they cannot be extinguished by wat</p>
-    <p>2.be of white colour </p>
-    <p>3.capable of either burning continuously  or flashing (discharge flashing) at a rate
-        of not less than 50 flashes and not more than 70 flashes </p>
-    <p>4.a luminous intensity of not
-        less than 2 cd in all directions of the upper hemisphere </p>
-    <p>5.d with a source of energy for a period of at least 2 h </p>
-</article>
-
-<h1>   Lifebuoy self-activating smoke signals</h1>
-<article class="browser">
-    <p>1.emit smoke of a highly visible colour at a uniform rate </p>
-    <p>2.period of at least 15 min when floating in calm water </p>
-    <p>3.not ignite explosively </p>
-    <p>4.not emit any flame during the entire smoke emission time of the signal </p>
-    <p>5.not be swamped in a seaway </p>
-    <p>6.continue to emit smoke when fully submerged in water for a period of at least 10 s </p>
-    <p>7.provided with a quick-release arrangement </p>
-    <p>8.a mass of not more than 4 kg </p>
-</article>
-<div id="Q" style="font-weight: bold;">Drop Test of  Lifebuoy/Self-igniting lights/Self-activating smoke signals
-    <p style="font-weight: lighter;">be constructed to withstand a drop into the water from the height at which it is stowed above the
-        waterline in the lightest seagoing condition or 30 m, whichever is the greater, without impairing
-        either its operating capability or that of its attached components</p>
 </div>
-<h1>    Buoyant lifelines</h1>
-<article class="browser">
-    <p>1.be non-kinking </p>
-    <p>2.have a diameter of not less than 8 mm </p>
-    <p>3.have a breaking strength of not less than 5 kN </p>
-</article>
-<h1>  Lifejackets</h1>
-<article class="browser">
-    <p>1. not sustain burning or continue melting after being totally enveloped in a fire for a period
-        of 2 s </p>
-    <p>2.clearly capable of being worn in only one way or inside-out and, if donned incorrectly, it is
-        not injurious to the wearer </p>
-    <p>3.at least 75% of persons who are completely unfamiliar with the lifejacket can correctly don it
-        within a period of 1 min without assistance, guidance </p>
-    <p>4.after demonstration, all persons can correctly don it within a period of 1 min without assistance </p>
-    <p>5.it is comfortable to wear </p>
-    <p>6.allows the wearer to jump into the water from a height of at least 4.5 m while holding on to
-        the lifejacket </p>
-    <p>7.allows the wearer to jump into the water from a height of at least 1m with arms held overhead </p>
-    <p>8.allow the person wearing it to swim a short distance and to board a survival craft </p>
-    <p>9.buoyancy not reduced by more than 5% after 24 h submersion in fresh water </p>
-    <p>10.fitted with a whistle firmly secured by a lanyard </p>
-    <p>11.provided with a releasable buoyant line or other means to secure it to a lifejacket
-        worn by another person in the water </p>
-    <p>12.provided with a suitable means to allow a rescuer to lift the wearer from the water
-        into a survival craft or rescue boat. </p>
-    <p> </p>
+</div>
+<div class="col cardcol">
+   <a class="maincard" href="Lsageneral.html">
+       <div class="card transition">
+           <h2 class="transition">General requirements for LSA</h2>
+           <!--<div class="cta-container transition"><p>Insert some text here to show on hover</p></div>-->
+           <div class="card_circle transition"></div>
+           </div>
+   </a>
+</div>
+<div class="col cardcol">
+    <a class="maincard" href="Lifebuoy.html">
+        <div class="card transition">
+            <h2 class="transition">Lifebuoy</h2>
+            <!--<div class="cta-container transition"><p>Insert some text here to show on hover</p></div>-->
+            <div class="card_circle transition"></div>
+            </div>
+    </a>
+ </div>
+ <div class="col cardcol">
+    <a class="maincard" href="Lifejacket.html">
+        <div class="card transition">
+            <h2 class="transition">Lifejacket</h2>
+            <!--<div class="cta-container transition"><p>Insert some text here to show on hover</p></div>-->
+            <div class="card_circle transition"></div>
+            </div>
+    </a>
+ </div>
+ <div class="col cardcol">
+    <a class="maincard" href="Immersion Suit.html">
+        <div class="card transition">
+            <h2 class="transition">Immersion Suit</h2>
+            <!--<div class="cta-container transition"><p>Insert some text here to show on hover</p></div>-->
+            <div class="card_circle transition"></div>
+            </div>
+    </a>
+ </div>
+ <div class="col cardcol">
+    <a class="maincard" href="Anti Exposure Suit.html">
+        <div class="card transition">
+            <h2 class="transition">Anti Exposure Suit</h2>
+            <!--<div class="cta-container transition"><p>Insert some text here to show on hover</p></div>-->
+            <div class="card_circle transition"></div>
+            </div>
+    </a>
+ </div>
+ <div class="col cardcol">
+    <a class="maincard" href="TPA.html">
+        <div class="card transition">
+            <h2 class="transition">Thermal Protective Aid</h2>
+            <!--<div class="cta-container transition"><p>Insert some text here to show on hover</p></div>-->
+            <div class="card_circle transition"></div>
+            </div>
+    </a>
+ </div>
+<div class="footer row justify-content-center pt-sm-4"
+style="text-decoration: none; color: ivory; background-color: rgb(31,44,63); text-align: center;">
+<div class="col-sm-3 box3 order-sm-last">
+    <img height="50px" src="../logoblueupright.png" alt="">
+</div>
 
+<div class="col-sm-3">
+    <a style="font-size: 14px; text-decoration: none; color: ivory;" href="about.html">About Us</a></br>
+    <a style="font-size: 14px; text-decoration: none; color: ivory;" href="credits.html">Credits</a></br>
+    <a style="font-size: 14px; text-decoration: none; color: ivory;" href="contact.html">Contact Us</a></br>
+    <a style="font-size: 14px; text-decoration: none; color: ivory;" href="contribute.html">Contribute to
+        Master&Mates</a></br>
+</div>
+<div class="col-sm-3">
+    <a style="font-size: 14px; text-decoration: none; color: ivory;" href="feedback.html">Provide
+        feedback</a></br>
+    <a style="font-size: 14px; text-decoration: none; color: ivory;" href="feature-request.html">Request for
+        feature</a></br>
+    <a style="font-size: 14px; text-decoration: none; color: ivory;" href="support.html">Support Us</a></br>
+    <a style="font-size: 14px; text-decoration: none; color: ivory;" href="">8</a></br>
+</div>
+</div>
+</body>
+</html>
