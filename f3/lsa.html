@@ -18,9 +18,24 @@
 <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
 <link rel="manifest" href="../site.webmanifest">
 <script src="../search.js" ></script>
+<script>
+    function marginFunction() {
+        let cardd = document.querySelector(".maincard");
+        let w = cardd.offsetWidth;
+        let circle = document.querySelector(".card_circle");
+        let ml = (450 - w) / 2; // calculates margin required as per width of card
+
+        //for creating new style rule so that all the cards are affected
+        var sheet = document.createElement('style')
+        sheet.innerHTML = ".card_circle {margin-left: -" + ml + "px}";
+        document.body.appendChild(sheet)
+    }
+    window.onresize = marginFunction;
+    window.onload = marginFunction; 
+</script>
+
 </head>
 <body>
-<<<<<<< HEAD:f3/bla.html
     
         <header class="container-fluid" style="background-color: rgb(31,44,63);">
         <div class="container" style="background-color: rgb(31,44,63);">
@@ -44,26 +59,8 @@
             </div>
         </div>
     </header>
-=======
-       <div class="header row align-items-center">
-               <picture class="col-6 col-md-8 logobox">
-               <source media="(min-width:576px)" srcset="../logoblueinline.png">
-               <img class="logo" height=50px src="../logo.png" alt="">
-               </picture>
-       <div class="col-3 col-md-2 home"><a href="../index.html" style="text-decoration: none; color: #B6B6B6;">Home</a>
-       </div>
-       <div class="col-3 col-md-2 search"><button class="sbtn"
-       style="background: none; border: none; color: #B6B6B6;">Search</button></div>
-               <div class="togglesearch">
-                       <input type="text" placeholder="" />
-                       <input type="button" value="Search" />
-       </div>
-       </div>
+    <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 justify-content-around">
 
->>>>>>> f52814758224ce2203f0a4cbccb2fe2f8fbd1b8f:f3/LSA.html
-
-</div>
-</div>
 <div class="col cardcol">
    <a class="maincard" href="Lsageneral.html">
        <div class="card transition">
@@ -117,6 +114,7 @@
             <div class="card_circle transition"></div>
             </div>
     </a>
+ </div>
  </div>
 <div class="footer row justify-content-center pt-sm-4"
 style="text-decoration: none; color: ivory; background-color: rgb(31,44,63); text-align: center;">
