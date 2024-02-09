@@ -4,14 +4,7 @@
 
 }
 
-.logobox {
-    position: relative;
-}
 
-
-picture {
-    height: 50px;
-}
 
 
 
@@ -24,15 +17,16 @@ picture {
     height: 50px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     display: none;
-    z-index: 9999;
+    z-index: 5 !important;
 }
+.togglesearch *{z-index: 9999 !important;}
 
 
 .togglesearch input[type="text"] {
     width: 80%;
     border: 1px solid rgb(31, 44, 63);
     height: 100%;
-
+    z-index: 5 !important;
 }
 
 .togglesearch input[type="button"] {
@@ -41,6 +35,8 @@ picture {
     background: rgb(31, 44, 63);
     color: #fff;
     cursor: pointer;
+    z-index: 5 !important;
+
 }
 
 .cardcol{height:  260px;}
@@ -64,7 +60,7 @@ picture {
 
 .card:hover {
     transform: scale(1.1);
-    z-index: 9999;
+    z-index: 3;
 
 }
 
@@ -104,7 +100,6 @@ picture {
     position: absolute;
     width: 450px;
 
-    ;
 }
 
 
@@ -117,7 +112,7 @@ h2 {
     position: absolute;
     text-align: center;
     width: 100%;
-    z-index: 9999;
+    z-index: 3;
 }
 li {
     list-style-type: none;

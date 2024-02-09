@@ -7,7 +7,7 @@
     <title>Document</title>
 
 
-    <link rel="stylesheet" href="../bootstrap.css">
+    <link rel="stylesheet" href="bootstrap.css">
     <link rel="stylesheet" href="function.css">
     <link rel="apple-touch-ico" sizes="180x180" href="../apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
@@ -15,6 +15,7 @@
     <link rel="manifest" href="../site.webmanifest">
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <script src="bootstrap.bundle.js"></script>
     <script>
         $(document).ready(function () {
             $(".sbtn").click(function () {
@@ -23,13 +24,17 @@
             });
         });
     </script>
+    <style>
+        nav *{border:none !important;}
+        nav {z-index: 2 !important ;}
+    </style>
 
 </head>
 
 <body>
     <header class="container-fluid" style="background-color: rgb(31,44,63);">
         <div class="container" style="background-color: rgb(31,44,63);">
-            <div class="row mb-4 border-bottom py-3" style="background-color: rgb(31,44,63);">
+            <div class="row border-bottom py-3" style="background-color: rgb(31,44,63);">
             <div class="col-10">
                 <a href="index.html">
                     <img height="60px" src="logoblueinline.png" alt="Master&Mates logo">
@@ -49,10 +54,51 @@
             </div>
         </div>
     </header>
-
-
-
-
+    
+    <nav class="navbar navbar-expand-sm border-bottom sticky-top bg-light" style="height: auto; padding: 0;" >
+        <div class="container-fluid">
+          <a class="navbar-brand d-sm-none" style="font-size: medium;" href="#">Navigate to...</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end text-bg-light" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Navigate to...</h5>
+              <button type="button" class="btn-close btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-center flex-grow-1">
+                  <li class="nav-item">
+                      <a class="nav-link"  href="f1/f1.html">Function 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="f2/f2.html">Function 2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="f3/f3.html">Function 3</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link"  href="#">Past Papers</a>
+                    </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Exit Exams
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item" href="#">AFF</a></li>
+                    <li><a class="dropdown-item" href="#">MFA</a></li>
+                    <li><a class="dropdown-item" href="#">TASCO</a></li>
+                    <li><a class="dropdown-item" href="#">CHEMCO</a></li>
+                    <li><a class="dropdown-item" href="#">OCTO</a></li>
+                    <li><a class="dropdown-item" href="#">FPFF</a></li>
+                    <li><a class="dropdown-item" href="#">PST</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
     <footer class="row justify-content-around py-sm-4 ps-3 pt-4" style="background-color: rgb(31,44,63);">
         <div class="col-sm-4 box3 order-sm-last">
             <img height="60px" src="../logoblueupright.png" alt="">
