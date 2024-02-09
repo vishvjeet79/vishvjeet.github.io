@@ -4,56 +4,19 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="../bootstrap.css">
+    <link rel="stylesheet" href="/css/bootstrap.css">
     <title>Function 2</title>
-    <link rel="stylesheet" href="../function.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
-    <link rel="manifest" href="../site.webmanifest">
-    <script>
-        function marginFunction() {
-            let cardd = document.querySelector(".maincard");
-            let w = cardd.offsetWidth;
-            let circle = document.querySelector(".card_circle");
-            let ml = (450 - w) / 2; // calculates margin required as per width of card
-
-            //for creating new style rule so that all the cards are affected
-            var sheet = document.createElement('style')
-            sheet.innerHTML = ".card_circle {margin-left: -" + ml + "px}";
-            document.body.appendChild(sheet)
-        }
-        window.onresize = marginFunction;
-        window.onload = marginFunction; 
-    </script>
+    <link rel="stylesheet" href="/css/function.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+    <link rel="manifest" href="/images/site.webmanifest">
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-        <script src="../search.js" ></script>
 </head>
 
 <body>
-        <header class="container-fluid" style="background-color: rgb(31,44,63);">
-        <div class="container" style="background-color: rgb(31,44,63);">
-            <div class="row mb-4 border-bottom py-3" style="background-color: rgb(31,44,63);">
-            <div class="col-10">
-                <a href="../index.html">
-                    <img height="60px" src="../logoblueinline.png" alt="Master&Mates logo">
-                </a>
-            </div>
-                <div class="col-2" style="display: flex; align-items: center; justify-content: right;"><button
-                        class="sbtn" style="background-color: inherit; border: none;"><svg
-                            xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#B6B6B6"
-                            class="bi bi-binoculars" viewBox="0 0 16 16">
-                            <path
-                                d="M3 2.5A1.5 1.5 0 0 1 4.5 1h1A1.5 1.5 0 0 1 7 2.5V5h2V2.5A1.5 1.5 0 0 1 10.5 1h1A1.5 1.5 0 0 1 13 2.5v2.382a.5.5 0 0 0 .276.447l.895.447A1.5 1.5 0 0 1 15 7.118V14.5a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 14.5v-3a.5.5 0 0 1 .146-.354l.854-.853V9.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v.793l.854.853A.5.5 0 0 1 7 11.5v3A1.5 1.5 0 0 1 5.5 16h-3A1.5 1.5 0 0 1 1 14.5V7.118a1.5 1.5 0 0 1 .83-1.342l.894-.447A.5.5 0 0 0 3 4.882zM4.5 2a.5.5 0 0 0-.5.5V3h2v-.5a.5.5 0 0 0-.5-.5zM6 4H4v.882a1.5 1.5 0 0 1-.83 1.342l-.894.447A.5.5 0 0 0 2 7.118V13h4v-1.293l-.854-.853A.5.5 0 0 1 5 10.5v-1A1.5 1.5 0 0 1 6.5 8h3A1.5 1.5 0 0 1 11 9.5v1a.5.5 0 0 1-.146.354l-.854.853V13h4V7.118a.5.5 0 0 0-.276-.447l-.895-.447A1.5 1.5 0 0 1 12 4.882V4h-2v1.5a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5zm4-1h2v-.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5zm4 11h-4v.5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5zm-8 0H2v.5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5z" />
-                        </svg></button></div>
-                <div class="togglesearch">
-                    <input type="text" placeholder="" />
-                    <input type="button" value="Search" />
-                </div>
-            </div>
-        </div>
-    </header>
+      <div id="header"></div>
     <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 justify-content-around">
         <div class="col cardcol">
             <a class="maincard" href="IG.html">
@@ -129,29 +92,7 @@
         </div>
     </div>
 
-    <div class="footer row justify-content-center pt-sm-4"
-        style="text-decoration: none; color: ivory; background-color: rgb(31,44,63); text-align: center;">
-        <div class="col-sm-3 box3 order-sm-last">
-            <img height="50px" src="../logoblueupright.png" alt="">
-        </div>
-
-        <div class="col-sm-3">
-            <a style="font-size: 14px; text-decoration: none; color: ivory;" href="about.html">About Us</a></br>
-            <a style="font-size: 14px; text-decoration: none; color: ivory;" href="credits.html">Credits</a></br>
-            <a style="font-size: 14px; text-decoration: none; color: ivory;" href="contact.html">Contact Us</a></br>
-            <a style="font-size: 14px; text-decoration: none; color: ivory;" href="contribute.html">Contribute to
-                Master&Mates</a></br>
-        </div>
-        <div class="col-sm-3">
-            <a style="font-size: 14px; text-decoration: none; color: ivory;" href="feedback.html">Provide
-                feedback</a></br>
-            <a style="font-size: 14px; text-decoration: none; color: ivory;" href="feature-request.html">Request for
-                feature</a></br>
-            <a style="font-size: 14px; text-decoration: none; color: ivory;" href="support.html">Support Us</a></br>
-            <a style="font-size: 14px; text-decoration: none; color: ivory;" href="">8</a></br>
-        </div>
-    </div>
-
+<div id="footer"></div>
 </body>
 
 </html>

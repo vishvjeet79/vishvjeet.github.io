@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script>
+   $(".sbtn").click(function () {
+        $(".togglesearch").toggle();
+       $("input[type='text']").focus();
+       });
+</script>
+<link rel="stylesheet" href="/css/bootstrap.css">
+<link rel="stylesheet" href="/css/function.css">
+<link rel="apple-touch-ico" sizes="180x180" href="/images/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+<link rel="manifest" href="/images/site.webmanifest">
+<script src="../search.js" ></script>
+</head>
+<body>
+       <div class="header row align-items-center">
+               <picture class="col-6 col-md-8 logobox">
+               <source media="(min-width:576px)" srcset="/images/logoblueinline.png">
+               <img class="logo" height=50px src="/images/logo.png" alt="">
+               </picture>
+       <div class="col-3 col-md-2 home"><a href="/index.html" style="text-decoration: none; color: #B6B6B6;">Home</a>
+       </div>
+       <div class="col-3 col-md-2 search"><button class="sbtn"
+       style="background: none; border: none; color: #B6B6B6;">Search</button></div>
+               <div class="togglesearch">
+                       <input type="text" placeholder="" />
+                       <input type="button" value="Search" />
+       </div>
+       </div>
+
+
+
+
+<footer class="row justify-content-around py-sm-4 ps-3 pt-4" style="background-color: rgb(31,44,63);">
+<div class="col-sm-4 box3 order-sm-last">
+<img height="60px" src="/images/logoblueupright.png" alt="">
+</div>
+
+<div class="col-sm-4 pt-2 pt-sm-0">
+    <ul>
+       <li><a href="about.html">About Us</a></li>
+       <li><a href="credits.html">Credits</a></li>
+       <li><a href="contact.html">Contact Us</a></li>
+       <li><a href="feedback.html">Provide feedback</a></li>
+       </ul>
+</div>
+<div class="col-sm-4 flast">
+       <ul>
+       <li><a href="contribute.html">Contribute to Master&Mates</a></li>
+       <li><a href="support.html">Support Us</a></li>
+       <li><a href="request.html">Request for feature</a></li>
+       <li><a href="#">Lorem ipsum</a></li>
+       </ul>
+</div>
+</footer>
+</body>
+</html>

@@ -1,13 +1,4 @@
-.inneroption:hover {
-    cursor: pointer;
-    background-color: #B6B6B6;
-
-}
-
-
-
-
-
+/*earchbar*/
 .togglesearch {
     background: #E8E8E4;
     position: absolute;
@@ -17,16 +8,14 @@
     height: 50px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     display: none;
-    z-index: 5 !important;
+    z-index: 9999 !important;
 }
-.togglesearch *{z-index: 9999 !important;}
-
 
 .togglesearch input[type="text"] {
     width: 80%;
     border: 1px solid rgb(31, 44, 63);
     height: 100%;
-    z-index: 5 !important;
+    z-index: 99999 !important;
 }
 
 .togglesearch input[type="button"] {
@@ -35,13 +24,11 @@
     background: rgb(31, 44, 63);
     color: #fff;
     cursor: pointer;
-    z-index: 5 !important;
+    z-index: 99999 !important;
 
 }
 
-.cardcol{height:  260px;}
-
-
+/*cards*/
 .transition {
     transition: .3s cubic-bezier(.3, 0, 0, 1.3);
 }
@@ -55,12 +42,11 @@
     overflow: hidden;
     width: 100%;
     border-radius: 10px;
-    margin: 10px;
 }
 
 .card:hover {
     transform: scale(1.1);
-    z-index: 3;
+    z-index: 2;
 
 }
 
@@ -114,6 +100,8 @@ h2 {
     width: 100%;
     z-index: 3;
 }
+
+/*footer*/
 li {
     list-style-type: none;
 }
@@ -134,13 +122,13 @@ footer div img {
 @media screen and (max-width: 576px) {
     footer div .box3{
         display: flex;
-        justify-content: center;
         align-items: center;
     }
 }
 
-
-
+/*navbar*/
+nav {border: none;}
+nav *{border:none !important;}
 
 /*p {
 color: rgba(0,0,0,.6);
@@ -163,104 +151,99 @@ z-index: 9999;
 
 /*backgrounds of cards*/
 .iala {
-    background: url(iala.png) no-repeat center top;
+    background: url(/images/iala.png) no-repeat center top;
     background-size: 450px 400px;
 }
 
 .ror {
-    background: url(ror.jpg) no-repeat center;
+    background: url(/images/ror.jpg) no-repeat center;
     background-size: 450px 400px;
 }
 
 .whp {
-    background: url(whp.jpg) no-repeat center;
+    background: url(/images/whp.jpg) no-repeat center;
     background-size: 450px 400px;
 }
 
 .bpg {
-    background: url(bpg.jpg) no-repeat center;
+    background: url(/images/bpg.jpg) no-repeat center;
     background-size: 450px 400px;
 }
 
 .coal {
-    background: url(coal.jpeg) no-repeat center;
+    background: url(/images/coal.jpeg) no-repeat center;
     background-size: 450px 400px;
 }
 
 .ffe {
-    background: url(ffe.jpg) no-repeat center;
+    background: url(/images/ffe.jpg) no-repeat center;
     background-size: 450px 400px;
 }
 
 .grn {
-    background: url(grn.jpg) no-repeat center;
+    background: url(/images/grn.jpg) no-repeat center;
     background-size: 450px 400px;
 }
 
 .bulk {
-    background: url(bulk.webp) no-repeat center;
+    background: url(/images/images/bulk.webp) no-repeat center;
     background-size: 450px 400px;
 }
 
 .trn {
-    background: url(trn.jpg) no-repeat center;
+    background: url(/images/trn.jpg) no-repeat center;
     background-size: 450px 400px;
 }
 
 .ecdis {
-    background: url(ecdis.gif) no-repeat center;
+    background: url(/images/ecdis.gif) no-repeat center;
     background-size: 450px 400px;
 }
 
 .rorcards {
-    background: url(rorcards.png) no-repeat center;
+    background: url(/images/rorcards.png) no-repeat center;
     background-size: 450px 400px;
 }
 .lboat {
-    background: url(lboat.webp) no-repeat center;
+    background: url(/images/lboat.webp) no-repeat center;
     background-size: 450px 400px;
 }
 .ffe {
-    background: url(ffe.jpeg) no-repeat center;
+    background: url(/images/ffe.jpeg) no-repeat center;
     background-size: 450px 400px;
 }
 .hru {
-    background: url(hru.jpeg) no-repeat center;
+    background: url(/images/hru.jpeg) no-repeat center;
     background-size: 450px 400px;
 }
 .squat {
-    background: url(squat.png) no-repeat center;
+    background: url(/images/squat.png) no-repeat center;
     background-size: 450px 400px;
 }
 .pvtpt {
-    background: url(pvtpt.jpg) no-repeat center;
+    background: url(/images/pvtpt.jpg) no-repeat center;
     background-size: 450px 400px;
 }
 .ig {
-    background: url(ig.jpg) no-repeat center;
+    background: url(/images/ig.jpg) no-repeat center;
     background-size: 450px 400px;
 }
 .cntr {
-    background: url(cntr.png) no-repeat center;
+    background: url(/images/cntr.png) no-repeat center;
     background-size: 450px 400px;
 }
 .csm {
-    background: url(csm.webp) no-repeat center;
+    background: url(/images/csm.webp) no-repeat center;
     background-size: 450px 400px;
 }
 .chnrg {
-    background: url(chnrg.jpg) no-repeat center;
+    background: url(/images/chnrg.jpg) no-repeat center;
     background-size: 450px 400px;
 }
 .rdr {
-    background: url(radar.jpg) no-repeat center;
+    background: url(/images/radar.jpg) no-repeat center;
     background-size: 450px 400px;
 }
-.ecdis {
-    background: url(ecdis.gif) no-repeat center;
-    background-size: 450px 400px;
-}
-
 
 nav {
     background-color: #3487f7;
