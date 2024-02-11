@@ -1,121 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LSA</title>
-<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-<script>
-   $(".sbtn").click(function () {
-        $(".togglesearch").toggle();
-       $("input[type='text']").focus();
-       });
-</script>
-<link rel="stylesheet" href="/css/bootstrap.css">
-<link rel="stylesheet" href="/css/function.css">
-<link rel="apple-touch-ico" sizes="180x180" href="/images/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
-<link rel="manifest" href="/images/site.webmanifest">
-<script src="../search.js" ></script>
-<script>
-    function marginFunction() {
-        let cardd = document.querySelector(".maincard");
-        let w = cardd.offsetWidth;
-        let circle = document.querySelector(".card_circle");
-        let ml = (450 - w) / 2; // calculates margin required as per width of card
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+        $(".sbtn").click(function () {
+            $(".togglesearch").toggle();
+            $("input[type='text']").focus();
+        });
+    </script>
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/function.css">
+    <link rel="apple-touch-ico" sizes="180x180" href="/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+    <link rel="manifest" href="/images/site.webmanifest">
+    <script src="../search.js"></script>
+    <script>
+        function marginFunction() {
+            let cardd = document.querySelector(".maincard");
+            let w = cardd.offsetWidth;
+            let circle = document.querySelector(".card_circle");
+            let ml = (450 - w) / 2; // calculates margin required as per width of card
 
-        //for creating new style rule so that all the cards are affected
-        var sheet = document.createElement('style')
-        sheet.innerHTML = ".card_circle {margin-left: -" + ml + "px}";
-        document.body.appendChild(sheet)
-    }
-    window.onresize = marginFunction;
-    window.onload = marginFunction; 
-</script>
+            //for creating new style rule so that all the cards are affected
+            var sheet = document.createElement('style')
+            sheet.innerHTML = ".card_circle {margin-left: -" + ml + "px}";
+            document.body.appendChild(sheet)
+        }
+        window.onresize = marginFunction;
+        window.onload = marginFunction; 
+    </script>
 
 </head>
+
 <body>
-    
-      <div id="header"></div>
+
+    <div id="header"></div>
     <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 justify-content-around">
 
-<div class="col cardcol">
-   <a class="maincard" href="Lsageneral.html">
-       <div class="card transition">
-           <h2 class="transition">General requirements for LSA</h2>
-           <!--<div class="cta-container transition"><p>Insert some text here to show on hover</p></div>-->
-           <div class="card_circle transition"></div>
-           </div>
-   </a>
-</div>
-<div class="col cardcol">
-    <a class="maincard" href="Lifebuoy.html">
-        <div class="card transition">
-            <h2 class="transition">Lifebuoy</h2>
-            <!--<div class="cta-container transition"><p>Insert some text here to show on hover</p></div>-->
-            <div class="card_circle transition"></div>
-            </div>
-    </a>
- </div>
- <div class="col cardcol">
-    <a class="maincard" href="Lifejacket.html">
-        <div class="card transition">
-            <h2 class="transition">Lifejacket</h2>
-            <!--<div class="cta-container transition"><p>Insert some text here to show on hover</p></div>-->
-            <div class="card_circle transition"></div>
-            </div>
-    </a>
- </div>
- <div class="col cardcol">
-    <a class="maincard" href="Immersion Suit.html">
-        <div class="card transition">
-            <h2 class="transition">Immersion Suit</h2>
-            <!--<div class="cta-container transition"><p>Insert some text here to show on hover</p></div>-->
-            <div class="card_circle transition"></div>
-            </div>
-    </a>
- </div>
- <div class="col cardcol">
-    <a class="maincard" href="Anti Exposure Suit.html">
-        <div class="card transition">
-            <h2 class="transition">Anti Exposure Suit</h2>
-            <!--<div class="cta-container transition"><p>Insert some text here to show on hover</p></div>-->
-            <div class="card_circle transition"></div>
-            </div>
-    </a>
- </div>
- <div class="col cardcol">
-    <a class="maincard" href="TPA.html">
-        <div class="card transition">
-            <h2 class="transition">Thermal Protective Aid</h2>
-            <!--<div class="cta-container transition"><p>Insert some text here to show on hover</p></div>-->
-            <div class="card_circle transition"></div>
-            </div>
-    </a>
- </div>
- </div>
-<div class="footer row justify-content-center pt-sm-4"
-style="text-decoration: none; color: ivory; background-color: rgb(31,44,63); text-align: center;">
-<div class="col-sm-3 box3 order-sm-last">
-    <img height="50px" src="/images/logoblueupright.png" alt="">
-</div>
+        <div class="col cardcol">
+            <a class="maincard" href="Lsageneral.html">
+                <div class="card transition">
+                    <h2 class="transition">General requirements for LSA</h2>
+                    <!--<div class="cta-container transition"><p>Insert some text here to show on hover</p></div>-->
+                    <div class="card_circle transition"></div>
+                </div>
+            </a>
+        </div>
+        <div class="col cardcol">
+            <a class="maincard" href="Lifebuoy.html">
+                <div class="card transition">
+                    <h2 class="transition">Lifebuoy</h2>
+                    <!--<div class="cta-container transition"><p>Insert some text here to show on hover</p></div>-->
+                    <div class="card_circle transition"></div>
+                </div>
+            </a>
+        </div>
+        <div class="col cardcol">
+            <a class="maincard" href="Lifejacket.html">
+                <div class="card transition">
+                    <h2 class="transition">Lifejacket</h2>
+                    <!--<div class="cta-container transition"><p>Insert some text here to show on hover</p></div>-->
+                    <div class="card_circle transition"></div>
+                </div>
+            </a>
+        </div>
+        <div class="col cardcol">
+            <a class="maincard" href="Immersion Suit.html">
+                <div class="card transition">
+                    <h2 class="transition">Immersion Suit</h2>
+                    <!--<div class="cta-container transition"><p>Insert some text here to show on hover</p></div>-->
+                    <div class="card_circle transition"></div>
+                </div>
+            </a>
+        </div>
+        <div class="col cardcol">
+            <a class="maincard" href="Anti Exposure Suit.html">
+                <div class="card transition">
+                    <h2 class="transition">Anti Exposure Suit</h2>
+                    <!--<div class="cta-container transition"><p>Insert some text here to show on hover</p></div>-->
+                    <div class="card_circle transition"></div>
+                </div>
+            </a>
+        </div>
+        <div class="col cardcol">
+            <a class="maincard" href="TPA.html">
+                <div class="card transition">
+                    <h2 class="transition">Thermal Protective Aid</h2>
+                    <!--<div class="cta-container transition"><p>Insert some text here to show on hover</p></div>-->
+                    <div class="card_circle transition"></div>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="footer row justify-content-center pt-sm-4"
+        style="text-decoration: none; color: ivory; background-color: rgb(31,44,63); text-align: center;">
+        <div class="col-sm-3 box3 order-sm-last">
+            <img height="50px" src="/images/logoblueupright.png" alt="">
+        </div>
 
-<div class="col-sm-3">
-    <a style="font-size: 14px; text-decoration: none; color: ivory;" href="about.html">About Us</a></br>
-    <a style="font-size: 14px; text-decoration: none; color: ivory;" href="credits.html">Credits</a></br>
-    <a style="font-size: 14px; text-decoration: none; color: ivory;" href="contact.html">Contact Us</a></br>
-    <a style="font-size: 14px; text-decoration: none; color: ivory;" href="contribute.html">Contribute to
-        Master&Mates</a></br>
-</div>
-<div class="col-sm-3">
-    <a style="font-size: 14px; text-decoration: none; color: ivory;" href="feedback.html">Provide
-        feedback</a></br>
-    <a style="font-size: 14px; text-decoration: none; color: ivory;" href="feature-request.html">Request for
-        feature</a></br>
-    <a style="font-size: 14px; text-decoration: none; color: ivory;" href="support.html">Support Us</a></br>
-    <a style="font-size: 14px; text-decoration: none; color: ivory;" href="">8</a></br>
-</div>
-</div>
+        <div class="col-sm-3">
+            <a style="font-size: 14px; text-decoration: none; color: ivory;" href="/home/about.html">About Us</a></br>
+            <a style="font-size: 14px; text-decoration: none; color: ivory;" href="/home/credits.html">Credits</a></br>
+            <a style="font-size: 14px; text-decoration: none; color: ivory;" href="/home/contact.html">Contact
+                Us</a></br>
+            <a style="font-size: 14px; text-decoration: none; color: ivory;" href="/home/contribute.html">Contribute to
+                Master&Mates</a></br>
+        </div>
+        <div class="col-sm-3">
+            <a style="font-size: 14px; text-decoration: none; color: ivory;" href="/home/feedback.html">Provide
+                feedback</a></br>
+            <a style="font-size: 14px; text-decoration: none; color: ivory;" href="feature-/home/request.html">Request
+                for
+                feature</a></br>
+            <a style="font-size: 14px; text-decoration: none; color: ivory;" href="/home/support.html">Support
+                Us</a></br>
+            <a style="font-size: 14px; text-decoration: none; color: ivory;" href="">8</a></br>
+        </div>
+    </div>
 </body>
+
 </html>
