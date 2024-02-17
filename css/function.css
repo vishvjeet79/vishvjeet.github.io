@@ -1,4 +1,4 @@
-/*earchbar*/
+/*searchbar*/
 .togglesearch {
     background: #E8E8E4;
     position: absolute;
@@ -26,6 +26,11 @@
     cursor: pointer;
     z-index: 99999 !important;
 
+}
+
+.cardbox{
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 /*cards*/
@@ -72,10 +77,11 @@
 .card:hover h2 small {
     color: #fff
 }
-
+/*
 .card:hover p {
     margin-top: 300px
 }
+*/
 
 .card_circle {
 
@@ -88,17 +94,16 @@
 
 }
 
-
 h2 {
     color: #3487f7;
     font-family: 'Raleway', sans-serif;
     font-size: 24px;
-    font-weight: 700;
     margin-top: 150px;
     position: absolute;
     text-align: center;
     width: 100%;
     z-index: 3;
+    font-weight: 500px;
 }
 
 /*footer*/
@@ -129,6 +134,8 @@ footer div img {
 /*navbar*/
 nav {border: none;}
 nav *{border:none !important;}
+
+/*header*/
 
 /*p {
 color: rgba(0,0,0,.6);
